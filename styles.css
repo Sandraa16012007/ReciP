@@ -37,6 +37,7 @@ header {
   padding: 25px 70px;
   position: sticky;
   top: 0;
+  width:100%;
   z-index: 10;
   background: rgba(255,255,255,0.7);
   backdrop-filter: blur(10px);
