@@ -165,7 +165,7 @@ header .logo {
   transition: all 0.3s ease;
   font-size: 18px;
 }
-.primary {
+.btn-primary {
   background: #ff9800;
   color: white;
   box-shadow: 0 4px 10px rgba(255,152,0,0.3);
