@@ -170,7 +170,7 @@ header .logo {
   color: white;
   box-shadow: 0 4px 10px rgba(255,152,0,0.3);
 }
-.primary:hover {
+.btn-primary:hover {
   background: #e68a00;
   transform: scale(1.05);
   box-shadow: 0 6px 14px rgba(255,152,0,0.5);
