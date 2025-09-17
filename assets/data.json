@@ -1,0 +1,103 @@
+{
+  "commonIngredients": [
+    "Chicken",
+    "Rice",
+    "Eggs",
+    "Pasta",
+    "Potatoes",
+    "Onions",
+    "Garlic",
+    "Tomatoes"
+  ],
+
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Mediterranean Garden Salad",
+      "time": "15 mins",
+      "servings": "2 servings",
+      "desc": "Fresh and vibrant salad with tomatoes, cucumbers, olives, and feta cheese dressed in olive oil and herbs.",
+      "image": "assets/Mediterranean-Garden-Salad.jpg",
+      "badge": "Quick",
+      "tags": ["Tomatoes", "Cucumber", "Feta"],
+      "ingredients": ["Tomatoes", "Cucumber", "Olives", "Feta", "Olive Oil", "Herbs"]
+    },
+    {
+      "id": 2,
+      "title": "Garlic Butter Chicken",
+      "time": "30 mins",
+      "servings": "3 servings",
+      "desc": "Juicy chicken cooked in a rich garlic butter sauce, perfect with rice or bread.",
+      "image": "assets/Garlic-Butter-Chicken.jpg",
+      "badge": "Popular",
+      "tags": ["Chicken", "Garlic", "Butter"],
+      "ingredients": ["Chicken", "Garlic", "Butter", "Parsley"]
+    },
+    {
+      "id": 3,
+      "title": "Classic Fried Rice",
+      "time": "20 mins",
+      "servings": "2 servings",
+      "desc": "Quick and delicious fried rice with eggs, veggies, and soy sauce.",
+      "image": "assets/Fried-Rice.jpg",
+      "badge": "Quick",
+      "tags": ["Rice", "Eggs", "Vegetables"],
+      "ingredients": ["Rice", "Eggs", "Carrots", "Peas", "Soy Sauce", "Onions"]
+    },
+    {
+      "id": 4,
+      "title": "Spaghetti Aglio e Olio",
+      "time": "25 mins",
+      "servings": "2 servings",
+      "desc": "Simple Italian pasta with garlic, olive oil, and chili flakes.",
+      "image": "assets/Spaghetti-Aglio-Olio.jpg",
+      "badge": "Vegetarian",
+      "tags": ["Pasta", "Garlic", "Olive Oil"],
+      "ingredients": ["Pasta", "Garlic", "Chili Flakes", "Olive Oil", "Parsley"]
+    },
+    {
+      "id": 5,
+      "title": "Cheesy Mashed Potatoes",
+      "time": "40 mins",
+      "servings": "4 servings",
+      "desc": "Creamy mashed potatoes blended with melted cheese for the ultimate comfort food.",
+      "image": "assets/Cheesy-Mashed-Potatoes.jpg",
+      "badge": "Comfort Food",
+      "tags": ["Potatoes", "Cheese"],
+      "ingredients": ["Potatoes", "Cheese", "Butter", "Milk", "Salt", "Pepper"]
+    },
+    {
+      "id": 6,
+      "title": "Spanish Omelette",
+      "time": "25 mins",
+      "servings": "2 servings",
+      "desc": "Egg-based dish packed with onions, potatoes, and herbs.",
+      "image": "assets/Spanish-Omelette.jpg",
+      "badge": "Healthy",
+      "tags": ["Eggs", "Onions", "Potatoes"],
+      "ingredients": ["Eggs", "Onions", "Potatoes", "Olive Oil", "Salt", "Pepper"]
+    },
+    {
+      "id": 7,
+      "title": "Tomato Basil Soup",
+      "time": "35 mins",
+      "servings": "3 servings",
+      "desc": "Warm and comforting soup made with fresh tomatoes and basil.",
+      "image": "assets/Tomato-Basil-Soup.jpg",
+      "badge": "Vegan",
+      "tags": ["Tomatoes", "Basil"],
+      "ingredients": ["Tomatoes", "Basil", "Onions", "Garlic", "Vegetable Stock"]
+    },
+    {
+      "id": 8,
+      "title": "Chicken Pasta Bake",
+      "time": "45 mins",
+      "servings": "4 servings",
+      "desc": "Baked pasta dish loaded with chicken, cheese, and tomato sauce.",
+      "image": "assets/Chicken-Pasta-Bake.jpg",
+      "badge": "Family Meal",
+      "tags": ["Chicken", "Pasta", "Cheese"],
+      "ingredients": ["Chicken", "Pasta", "Tomatoes", "Cheese", "Garlic", "Basil"]
+    }
+  ]
+}
