@@ -1,211 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About & Contact - ReciP</title>
-  <link rel="stylesheet" href="../styles/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
-</head>
+  <link rel="stylesheet" href="../styles/styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+
   <style>
     /* General Styles */
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(180deg, #f5fff5, #e8fbe8);
+      font-family: "Inter", sans-serif;
+      background: linear-gradient(180deg, #f8fff8, #eaf9ea);
       color: #2d572c;
       overflow-x: hidden;
     }
+
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 20px 50px;
       background: white;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-      position: relative;
-      z-index: 10;
-    }
-    header h1 {
-      color: #4b9049;
-      font-size: 28px;
-      margin: 0;
-      letter-spacing: -1px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      position: sticky;
+      top: 0;
+      z-index: 50;
     }
 
-    h2 span{
-        font-family: "Ranchers", sans-serif;
-        color: #4b9049;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        font-size: 38px;
-        letter-spacing: 2px;
+    header h1 {
+      font-size: 28px;
+      margin: 0;
+      color: #4b9049;
     }
 
     nav a {
-      margin: 0 15px;
+      margin: 0 18px;
       text-decoration: none;
       color: #2d572c;
-      font-weight: 500;
+      font-weight: 600;
+      font-size: 16px;
       transition: color 0.3s ease;
     }
     nav a:hover {
       color: #f97316;
     }
 
-    /* Sections */
+    /* Section Layout */
     section {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 80px auto;
-      text-align: center;
       padding: 20px;
+      text-align: center;
       animation: fadeUp 1s ease both;
     }
+
     section h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
+      font-size: 40px;
       color: #4b9049;
-      animation: bounceIn 1s ease both;
+      margin-bottom: 15px;
+      font-family: "Ranchers", sans-serif;
+      letter-spacing: 2px;
+      position: relative;
+      display: inline-block;
     }
+
+    section h2::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 4px;
+      border-radius: 2px;
+      background: #f97316;
+      animation: scaleLine 1s ease forwards;
+    }
+
     section p {
       font-size: 18px;
-      line-height: 1.6;
+      line-height: 1.7;
       margin-bottom: 20px;
       color: #444;
-      animation: fadeIn 1.5s ease both;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+    }
+    section p:nth-of-type(2){ animation-delay: 0.2s; }
+    section p:nth-of-type(3){ animation-delay: 0.4s; }
+    section p:nth-of-type(4){ animation-delay: 0.6s; }
+
+    .slogan {
+      font-size: 20px;
+      margin-top: 30px;
+      font-style: italic;
+      color: #f57c00;
+      animation: pulse 2s infinite;
     }
 
     /* Buttons */
     .btn {
       display: inline-block;
-      padding: 12px 24px;
-      border-radius: 25px;
-      font-weight: bold;
-      background: linear-gradient(to right, #ff9800, #ffb74d);
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 16px;
       text-decoration: none;
-      margin: 10px;
-      transition: transform 0.3s ease, background 0.3s ease;
+      margin: 15px 10px;
+      transition: all 0.3s ease;
     }
     .btn-orange {
-      background: #f97316;
-      background: linear-gradient(to right, #f57c00, #ff9800);
+      background: linear-gradient(45deg, #f57c00, #ff9800);
       color: white;
-      border: none;
     }
     .btn-orange:hover {
-      background: linear-gradient(to right, #f57c00, #ff9800);
-      transform: scale(1.05);
-      box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4);
-    }
-    .btn-outline {
-      border: 2px solid #2d7a2d;
-      color: #2d7a2d;
-      background: white;
-    }
-    .btn-outline:hover {
-      background: #2d7a2d;
-      color: white;
-      transform: scale(1.05);
-        box-shadow: 0 4px 15px rgba(45, 122, 45, 0.4);
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 6px 20px rgba(255,152,0,0.4);
     }
 
     /* Contact Form */
     form {
-      max-width: 600px;
-      margin: 0 auto;
+      max-width: 650px;
+      margin: 30px auto 0;
       text-align: left;
-      animation: fadeIn 1.5s ease both;
+      background: #ffffffcc;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+      animation: fadeIn 1.2s ease both;
     }
     form label {
       display: block;
-      margin-top: 15px;
-      font-weight: bold;
+      margin-top: 18px;
+      font-weight: 600;
+      font-size: 15px;
+      color: #2d572c;
     }
     form input, form textarea {
       width: 100%;
-      padding: 12px;
+      padding: 14px;
       margin-top: 8px;
-      border-radius: 8px;
+      border-radius: 10px;
       border: 1px solid #ccc;
       font-size: 16px;
-      transition: box-shadow 0.3s ease;
+      transition: border 0.3s ease, box-shadow 0.3s ease;
     }
     form input:focus, form textarea:focus {
-      box-shadow: 0 0 8px #a5d6a7;
+      border: 1px solid #4b9049;
+      box-shadow: 0 0 10px rgba(75,144,73,0.3);
       outline: none;
     }
     form button {
-      margin-top: 20px;
+      margin-top: 25px;
       width: 100%;
     }
 
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #f1fdf1;
-      color: #555;
-      margin-top: 40px;
-      z-index: 10;
+    /* Floating Icons Background */
+    .floating-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      overflow: hidden;
+      z-index: -1;
+      pointer-events: none;
     }
+    .floating-bg span {
+      position: absolute;
+      font-size: 32px;
+      animation: float 10s linear infinite;
+      opacity: 0.25;
+    }
+    .floating-bg span:nth-child(1){ top: 15%; left: 8%; animation-duration: 7s;}
+    .floating-bg span:nth-child(2){ top: 35%; left: 75%; animation-duration: 9s;}
+    .floating-bg span:nth-child(3){ top: 65%; left: 20%; animation-duration: 11s;}
+    .floating-bg span:nth-child(4){ top: 80%; left: 60%; animation-duration: 8s;}
+    .floating-bg span:nth-child(5){ top: 50%; left: 45%; animation-duration: 10s;}
 
     /* Animations */
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(30px); }
+      from { opacity: 0; transform: translateY(40px); }
       to { opacity: 1; transform: translateY(0); }
     }
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
     }
-    @keyframes bounceIn {
-      0% { transform: scale(0.3); opacity: 0; }
-      50% { transform: scale(1.1); opacity: 1; }
-      70% { transform: scale(0.9); }
-      100% { transform: scale(1); }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @keyframes scaleLine {
+      from { width: 0; }
+      to { width: 60px; }
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
     }
     @keyframes float {
-      0% { transform: translateY(0px) rotate(0deg); }
-      50% { transform: translateY(-20px) rotate(10deg); }
-      100% { transform: translateY(0px) rotate(0deg); }
+      0% { transform: translateY(0) rotate(0);}
+      50% { transform: translateY(-25px) rotate(10deg);}
+      100% { transform: translateY(0) rotate(0);}
     }
-
-    /* Floating Food Background */
-    .food {
-      position: absolute;
-      font-size: 40px;
-      opacity: 0.7;
-      animation: float 6s ease-in-out infinite;
-      z-index: 1;
-    }
-    .food:nth-child(1) { top: 15%; left: 10%; animation-duration: 7s; }
-    .food:nth-child(2) { top: 25%; left: 80%; animation-duration: 8s; }
-    .food:nth-child(3) { top: 70%; left: 20%; animation-duration: 6s; }
-    .food:nth-child(4) { top: 60%; left: 75%; animation-duration: 9s; }
-    .food:nth-child(5) { top: 40%; left: 50%; animation-duration: 10s; }
   </style>
 </head>
 <body>
 
-  <div class="gradient-bg"></div>
-  <!-- Floating Food Background -->
+  <!-- Floating Icons -->
   <div class="floating-bg">
     <span>🥬</span>
     <span>🍅</span>
     <span>🥕</span>
     <span>🍏</span>
     <span>🍋</span>
-    <span>🍇</span>
-    <span>🍌</span>
-    <span>🌽</span>
-    <span>🍒</span>
-    <span>🍉</span>
-    <span>🥒</span>
-    <span>🍄</span>
   </div>
 
   <!-- Header -->
@@ -221,36 +233,22 @@
 
   <!-- About Section -->
   <section id="about">
-    <h2>About&nbsp;&nbsp;<span>ReciP</span></h2>
+    <h2>About <span>ReciP</span></h2>
+    <br><br><br>
     <p>
       Welcome to <strong>ReciP</strong> – your kitchen’s smartest companion! 🎉
     </p>
-
     <p>
-      We know the feeling of opening your fridge, spotting random ingredients, 
-      and thinking, <em>“What on earth can I cook with this?”</em> 🥴 
-      That’s exactly why we built <strong>ReciP</strong>. 
-      Simply snap a picture of your fridge, groceries, or even leftovers, 
-      and we’ll instantly suggest delicious recipes you can prepare right away.
+      Ever opened your fridge, spotted random ingredients, and thought: <em>“What on earth can I cook with this?”</em> 🥴  
+      That’s exactly why we built <strong>ReciP</strong>. Just snap a picture of your groceries or leftovers, and we’ll suggest mouth-watering recipes instantly.
     </p>
-
     <p>
-      But <strong>ReciP</strong> isn’t just about cooking—it’s also about 
-      <strong>cooking responsibly</strong>. 
-      By helping you use what you already have, we reduce food waste, save money, 
-      and take a small but meaningful step toward a more sustainable planet. 🌱 
-      Every meal you create with <strong>ReciP</strong> is not only tasty, 
-      but also kinder to the environment.
+      But <strong>ReciP</strong> isn’t just about food—it’s about <strong>cooking responsibly</strong>.  
+      By using what you already have, we reduce waste, save money, and take meaningful steps toward a sustainable future. 🌱
     </p>
-
     <p>
-      Our goal is simple: to make cooking less stressful, more exciting, 
-      and environmentally conscious. 
-      Whether you’re a busy student, an adventurous foodie, 
-      or someone who just wants to eat better and waste less, 
-      <strong>ReciP</strong> helps you reimagine your kitchen in the smartest way. ✨
+      Whether you’re a student, foodie, or someone who just wants to waste less and eat better, <strong>ReciP</strong> helps you reimagine your kitchen in the smartest way. ✨
     </p>
-
     <p class="slogan">
       <em><strong>ReciP</strong> – Cook Smart. Waste Less. Live Better.</em>
     </p>
@@ -262,15 +260,15 @@
     <h2>Contact Us</h2>
     <p>
       Got a question, feedback, or just want to say hello?  
-      We’d love to hear from you! Fill out the form below and our team will get back to you soon.
+      We’d love to hear from you! Drop us a message and we’ll get back to you soon.
     </p>
 
     <form>
       <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
 
       <label for="email">Your Email</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
 
       <label for="message">Message</label>
       <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
