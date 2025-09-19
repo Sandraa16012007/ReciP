@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About & Contact - ReciP</title>
-  <link rel="stylesheet" href="../styles/styles.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet" />
 
   <style>
     /* General Styles */
@@ -26,7 +28,7 @@
       align-items: center;
       padding: 20px 50px;
       background: white;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
       position: sticky;
       top: 0;
       z-index: 50;
@@ -46,6 +48,7 @@
       font-size: 16px;
       transition: color 0.3s ease;
     }
+
     nav a:hover {
       color: #f97316;
     }
@@ -91,9 +94,18 @@
       transform: translateY(20px);
       animation: fadeInUp 1s ease forwards;
     }
-    section p:nth-of-type(2){ animation-delay: 0.2s; }
-    section p:nth-of-type(3){ animation-delay: 0.4s; }
-    section p:nth-of-type(4){ animation-delay: 0.6s; }
+
+    section p:nth-of-type(2) {
+      animation-delay: 0.2s;
+    }
+
+    section p:nth-of-type(3) {
+      animation-delay: 0.4s;
+    }
+
+    section p:nth-of-type(4) {
+      animation-delay: 0.6s;
+    }
 
     .slogan {
       font-size: 20px;
@@ -114,13 +126,15 @@
       margin: 15px 10px;
       transition: all 0.3s ease;
     }
+
     .btn-orange {
       background: linear-gradient(45deg, #f57c00, #ff9800);
       color: white;
     }
+
     .btn-orange:hover {
       transform: translateY(-3px) scale(1.05);
-      box-shadow: 0 6px 20px rgba(255,152,0,0.4);
+      box-shadow: 0 6px 20px rgba(255, 152, 0, 0.4);
     }
 
     /* Contact Form */
@@ -131,9 +145,10 @@
       background: #ffffffcc;
       padding: 30px;
       border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
       animation: fadeIn 1.2s ease both;
     }
+
     form label {
       display: block;
       margin-top: 18px;
@@ -141,7 +156,9 @@
       font-size: 15px;
       color: #2d572c;
     }
-    form input, form textarea {
+
+    form input,
+    form textarea {
       width: 100%;
       padding: 14px;
       margin-top: 8px;
@@ -150,11 +167,14 @@
       font-size: 16px;
       transition: border 0.3s ease, box-shadow 0.3s ease;
     }
-    form input:focus, form textarea:focus {
+
+    form input:focus,
+    form textarea:focus {
       border: 1px solid #4b9049;
-      box-shadow: 0 0 10px rgba(75,144,73,0.3);
+      box-shadow: 0 0 10px rgba(75, 144, 73, 0.3);
       outline: none;
     }
+
     form button {
       margin-top: 25px;
       width: 100%;
@@ -163,52 +183,125 @@
     /* Floating Icons Background */
     .floating-bg {
       position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       overflow: hidden;
       z-index: -1;
       pointer-events: none;
     }
+
     .floating-bg span {
       position: absolute;
       font-size: 32px;
       animation: float 10s linear infinite;
       opacity: 0.25;
     }
-    .floating-bg span:nth-child(1){ top: 15%; left: 8%; animation-duration: 7s;}
-    .floating-bg span:nth-child(2){ top: 35%; left: 75%; animation-duration: 9s;}
-    .floating-bg span:nth-child(3){ top: 65%; left: 20%; animation-duration: 11s;}
-    .floating-bg span:nth-child(4){ top: 80%; left: 60%; animation-duration: 8s;}
-    .floating-bg span:nth-child(5){ top: 50%; left: 45%; animation-duration: 10s;}
+
+    .floating-bg span:nth-child(1) {
+      top: 15%;
+      left: 8%;
+      animation-duration: 7s;
+    }
+
+    .floating-bg span:nth-child(2) {
+      top: 35%;
+      left: 75%;
+      animation-duration: 9s;
+    }
+
+    .floating-bg span:nth-child(3) {
+      top: 65%;
+      left: 20%;
+      animation-duration: 11s;
+    }
+
+    .floating-bg span:nth-child(4) {
+      top: 80%;
+      left: 60%;
+      animation-duration: 8s;
+    }
+
+    .floating-bg span:nth-child(5) {
+      top: 50%;
+      left: 45%;
+      animation-duration: 10s;
+    }
 
     /* Animations */
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
+
     @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
     }
+
     @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px);}
-      to { opacity: 1; transform: translateY(0);}
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
+
     @keyframes scaleLine {
-      from { width: 0; }
-      to { width: 60px; }
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 60px;
+      }
     }
+
     @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.05); }
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.05);
+      }
     }
+
     @keyframes float {
-      0% { transform: translateY(0) rotate(0);}
-      50% { transform: translateY(-25px) rotate(10deg);}
-      100% { transform: translateY(0) rotate(0);}
+      0% {
+        transform: translateY(0) rotate(0);
+      }
+
+      50% {
+        transform: translateY(-25px) rotate(10deg);
+      }
+
+      100% {
+        transform: translateY(0) rotate(0);
+      }
     }
   </style>
 </head>
+
 <body>
 
   <!-- Floating Icons -->
@@ -239,15 +332,19 @@
       Welcome to <strong>ReciP</strong> – your kitchen’s smartest companion! 🎉
     </p>
     <p>
-      Ever opened your fridge, spotted random ingredients, and thought: <em>“What on earth can I cook with this?”</em> 🥴  
-      That’s exactly why we built <strong>ReciP</strong>. Just snap a picture of your groceries or leftovers, and we’ll suggest mouth-watering recipes instantly.
+      Ever opened your fridge, spotted random ingredients, and thought: <em>“What on earth can I cook with this?”</em>
+      🥴
+      That’s exactly why we built <strong>ReciP</strong>. Just snap a picture of your groceries or leftovers, and we’ll
+      suggest mouth-watering recipes instantly.
     </p>
     <p>
-      But <strong>ReciP</strong> isn’t just about food—it’s about <strong>cooking responsibly</strong>.  
-      By using what you already have, we reduce waste, save money, and take meaningful steps toward a sustainable future. 🌱
+      But <strong>ReciP</strong> isn’t just about food—it’s about <strong>cooking responsibly</strong>.
+      By using what you already have, we reduce waste, save money, and take meaningful steps toward a sustainable
+      future. 🌱
     </p>
     <p>
-      Whether you’re a student, foodie, or someone who just wants to waste less and eat better, <strong>ReciP</strong> helps you reimagine your kitchen in the smartest way. ✨
+      Whether you’re a student, foodie, or someone who just wants to waste less and eat better, <strong>ReciP</strong>
+      helps you reimagine your kitchen in the smartest way. ✨
     </p>
     <p class="slogan">
       <em><strong>ReciP</strong> – Cook Smart. Waste Less. Live Better.</em>
@@ -259,7 +356,7 @@
   <section id="contact">
     <h2>Contact Us</h2>
     <p>
-      Got a question, feedback, or just want to say hello?  
+      Got a question, feedback, or just want to say hello?
       We’d love to hear from you! Drop us a message and we’ll get back to you soon.
     </p>
 
@@ -282,4 +379,5 @@
     <p>© 2025 ReciP | All Rights Reserved</p>
   </footer>
 </body>
+
 </html>

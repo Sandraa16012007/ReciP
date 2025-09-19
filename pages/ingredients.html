@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
   <script src="../script.js" defer></script>
 </head>
+
 <body class="ingredients-page">
   <!-- Floating Food Background -->
   <div class="floating-food">🍎</div>
@@ -39,8 +41,11 @@
     <div class="input-sections">
       <!-- Upload Image -->
       <div class="upload-box">
-        <h2><div class="method-icon">📸</div>Snap Your Ingredients</h2>
-        <p>Upload a photo of your fridge, groceries, or leftovers — anything you’ve got, and we’ll turn it into recipes for you!</p>
+        <h2>
+          <div class="method-icon">📸</div>Snap Your Ingredients
+        </h2>
+        <p>Upload a photo of your fridge, groceries, or leftovers — anything you’ve got, and we’ll turn it into recipes
+          for you!</p>
         <label class="upload-btn">
           <input type="file" id="ingredient-upload" accept="image/*" hidden>
           Choose Photo
@@ -55,7 +60,9 @@
 
       <!-- Type Ingredients -->
       <div class="text-box">
-        <h2><div class="method-icon">✏️</div> Type Your Ingredients</h2>
+        <h2>
+          <div class="method-icon">✏️</div> Type Your Ingredients
+        </h2>
         <p>List what you have, separated by commas</p>
         <textarea placeholder="e.g., tomatoes, onions, garlic, rice, chicken..." maxlength="500"></textarea>
         <div class="char-count">0/500 characters</div>
@@ -82,16 +89,24 @@
   </footer>
 
   <div id="loading-spinner" style="display:none; text-align:center; margin-top:20px;">
-    <div class="spinner" style="border:4px solid #f3f3f3; border-top:4px solid #ff9019; border-radius:50%; width:40px; height:40px; animation:spin 1s linear infinite; margin:auto;"></div>
+    <div class="spinner"
+      style="border:4px solid #f3f3f3; border-top:4px solid #ff9019; border-radius:50%; width:40px; height:40px; animation:spin 1s linear infinite; margin:auto;">
+    </div>
   </div>
 
   <style>
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   </style>
 
 
 </body>
+
 </html>
