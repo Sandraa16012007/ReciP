@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReciP | Login & Signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* ===== Base Reset ===== */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(-45deg, #e0ffe0, #d2f2ff, #fff0d6, #ffe0f0);
+        background-size: 400% 400%;
+        animation: gradientMove 15s ease infinite;
+        overflow-x: hidden;
+      }
+      @keyframes gradientMove {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      /* ===== Navbar ===== */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 70px;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        animation: slideDown 1s ease-out;
+      }
+      @keyframes slideDown {
+        from {
+          transform: translateY(-100px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      header .logo {
+        color: #4b9049;
+        font-family: "Ranchers", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-size: 38px;
+        letter-spacing: 1px;
+        cursor: pointer;
+      }
+
+      .nav-links {
+        display: flex;
+      }
+      .nav-links a {
+        margin-left: 60px;
+        text-decoration: none;
+        font-weight: 600;
+        color: #284f28;
+        font-size: 20px;
+        position: relative;
+        transition: color 0.3s;
+      }
+      .nav-links a:hover {
+        color: #ff9800;
+      }
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 3px;
+        background: #ff9800;
+        left: 0;
+        bottom: -6px;
+        transition: width 0.3s ease-in-out;
+        border-radius: 2px;
+      }
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+
+      /* Hamburger (for mobile) */
+      .hamburger {
+        display: none;
+        font-size: 26px;
+        cursor: pointer;
+        color: #ff9800;
+      }
+
+      /* ===== Auth Section ===== */
+      .auth-wrapper {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .auth-container {
+        position: relative;
+        width: 360px;
+        min-height: 420px;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(14px);
+        border-radius: 16px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+      }
+      .form-box {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 40px 30px;
+        transition: all 0.6s ease;
+        opacity: 0;
+        transform: translateX(100%);
+        pointer-events: none;
+      }
+      .form-box.active {
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: auto;
+        z-index: 2;
+      }
+      .form-box.exit-left {
+        transform: translateX(-100%);
+      }
+      .form-box h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #222;
+      }
+      .form-box input {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        background: rgba(255, 255, 255, 0.6);
+        color: #222;
+        font-size: 1rem;
+      }
+      .form-box input::placeholder {
+        color: rgba(34, 34, 34, 0.7);
+      }
+      .form-box button {
+        width: 100%;
+        margin-top: 15px;
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        background: #ff9800;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .form-box button:hover {
+        background: #e68900;
+      }
+      .toggle-link {
+        margin-top: 15px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: #ff9800;
+      }
+
+      /* ===== Floating Emojis ===== */
+      .floating-bg span {
+        position: absolute;
+        font-size: 1.5rem;
+        animation: float 10s infinite linear;
+      }
+      @keyframes float {
+        from {
+          transform: translateY(100vh) rotate(0deg);
+        }
+        to {
+          transform: translateY(-10vh) rotate(360deg);
+        }
+      }
+      .floating-bg span:nth-child(1) {
+        left: 10%;
+        animation-duration: 12s;
+      }
+      .floating-bg span:nth-child(2) {
+        left: 20%;
+        animation-duration: 14s;
+      }
+      .floating-bg span:nth-child(3) {
+        left: 30%;
+        animation-duration: 10s;
+      }
+      .floating-bg span:nth-child(4) {
+        left: 40%;
+        animation-duration: 16s;
+      }
+      .floating-bg span:nth-child(5) {
+        left: 50%;
+        animation-duration: 11s;
+      }
+      .floating-bg span:nth-child(6) {
+        left: 60%;
+        animation-duration: 13s;
+      }
+      .floating-bg span:nth-child(7) {
+        left: 70%;
+        animation-duration: 15s;
+      }
+      .floating-bg span:nth-child(8) {
+        left: 80%;
+        animation-duration: 12s;
+      }
+      .floating-bg span:nth-child(9) {
+        left: 90%;
+        animation-duration: 14s;
+      }
+
+      /* ===== Footer ===== */
+      footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+        color: #444;
+        background: rgba(255, 255, 255, 0.4);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="logo">ReciP</div>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="about.html#contact">Contact</a>
+      </nav>
+      <div class="hamburger">☰</div>
+    </header>
+
+    <!-- Auth Section -->
+    <div class="auth-wrapper">
+      <div class="auth-container">
+        <!-- Login Form -->
+        <div class="form-box active" id="loginForm">
+          <h2>Welcome Back</h2>
+          <form>
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <a href="ingredients.html">
+              <button type="button">Login</button>
+            </a>
+          </form>
+          <div class="toggle-link" onclick="toggleAuth('signup')">
+            Don’t have an account? Sign Up
+          </div>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="form-box" id="signupForm">
+          <h2>Create an Account</h2>
+          <form>
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <a href="ingredients.html">
+              <button type="button">Sign Up</button>
+            </a>
+          </form>
+          <div class="toggle-link" onclick="toggleAuth('login')">
+            Already have an account? Login
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const loginForm = document.getElementById("loginForm");
+      const signupForm = document.getElementById("signupForm");
+
+      function toggleAuth(mode) {
+        if (mode === "signup") {
+          loginForm.classList.remove("active");
+          loginForm.classList.add("exit-left");
+          signupForm.classList.add("active");
+        } else {
+          signupForm.classList.remove("active");
+          loginForm.classList.remove("exit-left");
+          loginForm.classList.add("active");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,226 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ReciP - Recipe Info</title>
-    <meta name="description" content="A classic Spanish tortilla made with eggs, potatoes, and onions. Reduces food waste and has 40% lower carbon footprint than takeout.">
-    
-    <link rel="stylesheet" href="../styles/recipe-info-styles.css">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/animations.css">
+    <meta
+      name="description"
+      content="A classic Spanish tortilla made with eggs, potatoes, and onions. Reduces food waste and has 40% lower carbon footprint than takeout."
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/recipe-info-styles.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/animations.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap"
+      rel="stylesheet"
+    />
     <script src="../script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Floating decorations -->
-    <div class="floating-decoration" style="top: 5rem; left: 2.5rem; width: 1rem; height: 1rem; background: var(--eco);"></div>
-    <div class="floating-decoration" style="top: 10rem; right: 5rem; width: 1.5rem; height: 1.5rem; background: var(--secondary);"></div>
-    <div class="floating-decoration" style="bottom: 8rem; left: 5rem; width: 0.75rem; height: 0.75rem; background: var(--accent);"></div>
-    <div class="floating-decoration" style="bottom: 15rem; right: 2.5rem; width: 1.25rem; height: 1.25rem; background: var(--success);"></div>
+    <div
+      class="floating-decoration"
+      style="
+        top: 5rem;
+        left: 2.5rem;
+        width: 1rem;
+        height: 1rem;
+        background: var(--eco);
+      "
+    ></div>
+    <div
+      class="floating-decoration"
+      style="
+        top: 10rem;
+        right: 5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: var(--secondary);
+      "
+    ></div>
+    <div
+      class="floating-decoration"
+      style="
+        bottom: 8rem;
+        left: 5rem;
+        width: 0.75rem;
+        height: 0.75rem;
+        background: var(--accent);
+      "
+    ></div>
+    <div
+      class="floating-decoration"
+      style="
+        bottom: 15rem;
+        right: 2.5rem;
+        width: 1.25rem;
+        height: 1.25rem;
+        background: var(--success);
+      "
+    ></div>
 
     <!-- Header Navigation -->
     <header>
-        <div class="logo">ReciP</div>
-        <nav class="nav-links">
+      <div class="logo">ReciP</div>
+      <nav class="nav-links">
         <a href="../index.html">Home</a>
         <a href="about.html">About</a>
         <a href="about.html#contact">Contact</a>
-        </nav>
-        <div class="hamburger">☰</div>
+      </nav>
+      <div class="hamburger">☰</div>
     </header>
 
     <div class="floating-bg">
-        <span>🥬</span>
-        <span>🍅</span>
-        <span>🥕</span>
-        <span>🍏</span>
-        <span>🍋</span>
-        <span>🍇</span>
-        <span>🍌</span>
-        <span>🌽</span>
-        <span>🍒</span>
-        <span>🍉</span>
-        <span>🥒</span>
-        <span>🍄</span>
+      <span>🥬</span>
+      <span>🍅</span>
+      <span>🥕</span>
+      <span>🍏</span>
+      <span>🍋</span>
+      <span>🍇</span>
+      <span>🍌</span>
+      <span>🌽</span>
+      <span>🍒</span>
+      <span>🍉</span>
+      <span>🥒</span>
+      <span>🍄</span>
     </div>
 
     <main class="recipe-detail-container">
-        <div class="container">
-            <div class="recipe-detail-grid">
-                <!-- Main Content -->
-                <div class="main-content">
-                    <!-- Hero Section -->
-                    <div class="recipe-hero">
-                        <div class="recipe-hero-image">
-                            <img src="../assets/Spanish-Omelette.jpg" alt="Spanish Omelette" class="hero-image">
-                            <div class="difficulty-badge">Easy</div>
-                        </div>
-                        
-                        <div class="recipe-hero-content">
-                            <div class="recipe-hero-header">
-                                <h1 class="recipe-hero-title">Spanish Omelette</h1>
-                                <div class="eco-badge">
-                                    <span class="eco-icon">🌱</span>
-                                    +50 Points
-                                </div>
-                            </div>
-                            
-                            <p class="recipe-hero-description">
-                                A classic Spanish tortilla made with eggs, potatoes, and onions. This recipe reduces food waste by using every part of the ingredients and has a 40% lower carbon footprint than ordering takeout.
-                            </p>
+      <div class="container">
+        <div class="recipe-detail-grid">
+          <!-- Main Content -->
+          <div class="main-content">
+            <!-- Hero Section -->
+            <div class="recipe-hero">
+              <div class="recipe-hero-image">
+                <img
+                  src="../assets/Spanish-Omelette.jpg"
+                  alt="Spanish Omelette"
+                  class="hero-image"
+                />
+                <div class="difficulty-badge">Easy</div>
+              </div>
 
-                            <div class="recipe-stats">
-                                <div class="stat-item">
-                                    <span class="stat-icon">⏱️</span>
-                                    <div>
-                                        <div class="stat-value">25 mins</div>
-                                        <div class="stat-label">Total time</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="stat-item">
-                                    <span class="stat-icon">👥</span>
-                                    <div>
-                                        <div class="stat-value">2 servings</div>
-                                        <div class="stat-label">Serves</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="stat-item">
-                                    <span class="stat-icon">👨‍🍳</span>
-                                    <div>
-                                        <div class="stat-value">Easy</div>
-                                        <div class="stat-label">Difficulty</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="stat-item eco-stat">
-                                    <span class="stat-icon">📉</span>
-                                    <div>
-                                        <div class="stat-value">-40%</div>
-                                        <div class="stat-label">CO₂ vs takeout</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Ingredients Section -->
-                    <div class="recipe-section">
-                        <div class="section-header">
-                            <h2 class="section-title">Ingredients</h2>
-                            <div class="ingredients-status">
-                                <span id="availableCount">5</span>/<span id="totalCount">7</span> available
-                            </div>
-                        </div>
-                        
-                        <div class="ingredients-list" id="ingredientsList">
-                            <!-- Ingredients will be populated by JavaScript -->
-                        </div>
-                        
-                        <div id="missingIngredients" class="missing-ingredients">
-                            <h3 class="missing-title">Missing ingredients:</h3>
-                            <div class="missing-tags" id="missingTags">
-                                <!-- Missing ingredients will be populated by JavaScript -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Cooking Steps -->
-                    <div class="recipe-section">
-                        <div class="section-header">
-                            <h2 class="section-title">Cooking Steps</h2>
-                            <div class="steps-progress">
-                                <div class="progress-bar">
-                                    <div class="progress-fill" id="stepsProgress" style="width: 0%;"></div>
-                                </div>
-                                <span class="progress-text"><span id="completedSteps">0</span>/<span id="totalSteps">8</span></span>
-                            </div>
-                        </div>
-                        
-                        <div class="steps-list" id="stepsList">
-                            <!-- Steps will be populated by JavaScript -->
-                        </div>
-                    </div>
+              <div class="recipe-hero-content">
+                <div class="recipe-hero-header">
+                  <h1 class="recipe-hero-title">Spanish Omelette</h1>
+                  <div class="eco-badge">
+                    <span class="eco-icon">🌱</span>
+                    +50 Points
+                  </div>
                 </div>
 
-                <!-- Sidebar -->
-                <div class="sidebar">
-                    <!-- Eco Impact -->
-                    <div class="sidebar-card">
-                        <h3 class="sidebar-title">
-                            <span class="sidebar-icon">🌱</span>
-                            Eco Impact
-                        </h3>
-                        
-                        <div class="eco-impact-items">
-                            <div class="impact-item food-saved">
-                                <div class="impact-header">
-                                    <span class="impact-icon">🎯</span>
-                                    <span class="impact-title">Food Saved</span>
-                                </div>
-                                <p class="impact-description">
-                                    Complete this recipe to save 320g of vegetables from waste!
-                                </p>
-                                <div class="impact-value">+50 Eco Points</div>
-                            </div>
-                            
-                            <div class="impact-item carbon-footprint">
-                                <div class="impact-header">
-                                    <span class="impact-icon">🌲</span>
-                                    <span class="impact-title">Carbon Footprint</span>
-                                </div>
-                                <p class="impact-description">
-                                    This recipe has 40% lower carbon footprint than ordering takeout 🌍
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                <p class="recipe-hero-description">
+                  A classic Spanish tortilla made with eggs, potatoes, and
+                  onions. This recipe reduces food waste by using every part of
+                  the ingredients and has a 40% lower carbon footprint than
+                  ordering takeout.
+                </p>
 
-                    <!-- Achievements -->
-                    <div class="sidebar-card">
-                        <h3 class="sidebar-title">
-                            <span class="sidebar-icon">🏆</span>
-                            Achievements
-                        </h3>
-                        
-                        <div class="achievements-list" id="achievementsList">
-                            <!-- Achievements will be populated by JavaScript -->
-                        </div>
+                <div class="recipe-stats">
+                  <div class="stat-item">
+                    <span class="stat-icon">⏱️</span>
+                    <div>
+                      <div class="stat-value">25 mins</div>
+                      <div class="stat-label">Total time</div>
                     </div>
+                  </div>
 
-                    <!-- Sustainable Tips -->
-                    <div class="sidebar-card">
-                        <h3 class="sidebar-title">
-                            <span class="sidebar-icon">💡</span>
-                            Sustainable Tips
-                        </h3>
-                        
-                        <div class="tips-list" id="tipsList">
-                            <!-- Tips will be populated by JavaScript -->
-                        </div>
+                  <div class="stat-item">
+                    <span class="stat-icon">👥</span>
+                    <div>
+                      <div class="stat-value">2 servings</div>
+                      <div class="stat-label">Serves</div>
                     </div>
+                  </div>
+
+                  <div class="stat-item">
+                    <span class="stat-icon">👨‍🍳</span>
+                    <div>
+                      <div class="stat-value">Easy</div>
+                      <div class="stat-label">Difficulty</div>
+                    </div>
+                  </div>
+
+                  <div class="stat-item eco-stat">
+                    <span class="stat-icon">📉</span>
+                    <div>
+                      <div class="stat-value">-40%</div>
+                      <div class="stat-label">CO₂ vs takeout</div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+
+            <!-- Ingredients Section -->
+            <div class="recipe-section">
+              <div class="section-header">
+                <h2 class="section-title">Ingredients</h2>
+                <div class="ingredients-status">
+                  <span id="availableCount">5</span>/<span id="totalCount"
+                    >7</span
+                  >
+                  available
+                </div>
+              </div>
+
+              <div class="ingredients-list" id="ingredientsList">
+                <!-- Ingredients will be populated by JavaScript -->
+              </div>
+
+              <div id="missingIngredients" class="missing-ingredients">
+                <h3 class="missing-title">Missing ingredients:</h3>
+                <div class="missing-tags" id="missingTags">
+                  <!-- Missing ingredients will be populated by JavaScript -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Cooking Steps -->
+            <div class="recipe-section">
+              <div class="section-header">
+                <h2 class="section-title">Cooking Steps</h2>
+                <div class="steps-progress">
+                  <div class="progress-bar">
+                    <div
+                      class="progress-fill"
+                      id="stepsProgress"
+                      style="width: 0%"
+                    ></div>
+                  </div>
+                  <span class="progress-text"
+                    ><span id="completedSteps">0</span>/<span id="totalSteps"
+                      >8</span
+                    ></span
+                  >
+                </div>
+              </div>
+
+              <div class="steps-list" id="stepsList">
+                <!-- Steps will be populated by JavaScript -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <div class="sidebar">
+            <!-- Eco Impact -->
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">
+                <span class="sidebar-icon">🌱</span>
+                Eco Impact
+              </h3>
+
+              <div class="eco-impact-items">
+                <div class="impact-item food-saved">
+                  <div class="impact-header">
+                    <span class="impact-icon">🎯</span>
+                    <span class="impact-title">Food Saved</span>
+                  </div>
+                  <p class="impact-description">
+                    Complete this recipe to save 320g of vegetables from waste!
+                  </p>
+                  <div class="impact-value">+50 Eco Points</div>
+                </div>
+
+                <div class="impact-item carbon-footprint">
+                  <div class="impact-header">
+                    <span class="impact-icon">🌲</span>
+                    <span class="impact-title">Carbon Footprint</span>
+                  </div>
+                  <p class="impact-description">
+                    This recipe has 40% lower carbon footprint than ordering
+                    takeout 🌍
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Achievements -->
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">
+                <span class="sidebar-icon">🏆</span>
+                Achievements
+              </h3>
+
+              <div class="achievements-list" id="achievementsList">
+                <!-- Achievements will be populated by JavaScript -->
+              </div>
+            </div>
+
+            <!-- Sustainable Tips -->
+            <div class="sidebar-card">
+              <h3 class="sidebar-title">
+                <span class="sidebar-icon">💡</span>
+                Sustainable Tips
+              </h3>
+
+              <div class="tips-list" id="tipsList">
+                <!-- Tips will be populated by JavaScript -->
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
 
     <!-- Toast Notifications -->
     <div id="toast-container" class="toast-container"></div>
     <footer>
-        <p>© 2025 ReciP | All Rights Reserved</p>
+      <p>© 2025 ReciP | All Rights Reserved</p>
     </footer>
 
     <script src="script.js"></script>
     <script>
-        // Initialize recipe detail page
-        document.addEventListener('DOMContentLoaded', function() {
-            initializeRecipeDetail();
-        });
+      // Initialize recipe detail page
+      document.addEventListener("DOMContentLoaded", function () {
+        initializeRecipeDetail();
+      });
     </script>
-</body>
+  </body>
 </html>
