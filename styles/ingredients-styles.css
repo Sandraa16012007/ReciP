@@ -36,7 +36,7 @@
   border-radius: 12px;
   padding: 40px;
   width: 400px;
-  height: 350px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 6px 20px rgba(0,0,0,0.1);
@@ -66,6 +66,7 @@
 }
 
 .method-icon {
+  margin-top:0;
   font-size: 3.5rem;
   text-align: center;
   margin-bottom: 1.1rem;
@@ -238,6 +239,45 @@ textarea {
 .navbar ul li a.active {
   color: #ff7b00;
 }
+
+/* Upload box feedback container */
+.upload-feedback {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  min-height: 30px; /* reserve space */
+}
+
+/* Spinner */
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #ff9019;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+/* Status text */
+#upload-status {
+  font-weight: 500;
+  font-size: 15px;
+  color: #ff9019;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+#upload-status.show {
+  opacity: 1;
+}
+
+/* Spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 
 
 

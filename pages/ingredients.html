@@ -42,9 +42,15 @@
         <h2><div class="method-icon">📸</div>Snap Your Ingredients</h2>
         <p>Upload a photo of your fridge, groceries, or leftovers — anything you’ve got, and we’ll turn it into recipes for you!</p>
         <label class="upload-btn">
-          <input type="file" hidden>
+          <input type="file" id="ingredient-upload" accept="image/*" hidden>
           Choose Photo
         </label>
+
+        <!-- Integrated status and spinner inside the upload box -->
+        <div class="upload-feedback">
+          <div id="loading-spinner" class="spinner" style="display:none;"></div>
+          <p id="upload-status"></p>
+        </div>
       </div>
 
       <!-- Type Ingredients -->
@@ -74,5 +80,18 @@
   <footer>
     <p>© 2025 ReciP | All Rights Reserved</p>
   </footer>
+
+  <div id="loading-spinner" style="display:none; text-align:center; margin-top:20px;">
+    <div class="spinner" style="border:4px solid #f3f3f3; border-top:4px solid #ff9019; border-radius:50%; width:40px; height:40px; animation:spin 1s linear infinite; margin:auto;"></div>
+  </div>
+
+  <style>
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  </style>
+
+
 </body>
 </html>

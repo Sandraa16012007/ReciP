@@ -1,0 +1,391 @@
+/* ReciP Animations & Effects */
+
+/* Floating decoration elements */
+.floating-decoration {
+  position: fixed;
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: floatingPulse 3s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes floatingPulse {
+  from { 
+    opacity: 0.2;
+    transform: scale(1) translateY(0); 
+  }
+  to { 
+    opacity: 0.5;
+    transform: scale(1.1) translateY(-5px); 
+  }
+}
+
+/* Eco badge animations */
+.eco-badge {
+  background: var(--gradient-eco);
+  animation: ecoGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes ecoGlow {
+  from { 
+    box-shadow: 0 0 5px hsl(100, 50%, 50%, 0.5); 
+  }
+  to { 
+    box-shadow: 0 0 20px hsl(100, 50%, 50%, 0.8); 
+  }
+}
+
+/* Achievement badges */
+.achievement-card.earned {
+  position: relative;
+  overflow: hidden;
+  background: var(--gradient-orange);
+  animation: achievementShimmer 3s ease-in-out infinite;
+}
+
+.achievement-item.earned {
+  position: relative;
+  overflow: hidden;
+  background: var(--gradient-orange);
+  animation: achievementShimmer 3s ease-in-out infinite;
+}
+
+@keyframes achievementShimmer {
+  0% { 
+    background-position: -200% center; 
+  }
+  100% { 
+    background-position: 200% center; 
+  }
+}
+
+/* Step completion animation */
+.step-item.completed {
+  animation: stepBounce 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes stepBounce {
+  0% { 
+    transform: scale(1); 
+  }
+  50% { 
+    transform: scale(1.05); 
+  }
+  100% { 
+    transform: scale(1); 
+  }
+}
+
+/* Ingredient highlight animation */
+.ingredient-item.available {
+  animation: ingredientGlow 0.5s ease-in-out;
+}
+
+@keyframes ingredientGlow {
+  0% { 
+    background-color: var(--success); 
+  }
+  100% { 
+    background-color: hsl(142, 76%, 36%, 0.1); 
+  }
+}
+
+/* Card hover effects */
+.recipe-card,
+.feature-card,
+.stat-card,
+.achievement-card,
+.sidebar-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.recipe-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-eco);
+}
+
+.feature-card:hover,
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+}
+
+.achievement-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Button hover animations */
+.btn {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-orange);
+}
+
+.btn-outline:hover {
+  transform: translateY(-1px);
+}
+
+/* Page transition animations */
+.main-content {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero section animations */
+.hero-content {
+  animation: fadeInLeft 0.8s ease-out;
+}
+
+.hero-image {
+  animation: fadeInRight 0.8s ease-out 0.2s both;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Staggered animations for grids */
+.features-grid .feature-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.features-grid .feature-card:nth-child(1) { animation-delay: 0.1s; }
+.features-grid .feature-card:nth-child(2) { animation-delay: 0.2s; }
+.features-grid .feature-card:nth-child(3) { animation-delay: 0.3s; }
+.features-grid .feature-card:nth-child(4) { animation-delay: 0.4s; }
+
+.recipes-grid .recipe-card,
+.recipes-list .recipe-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.recipes-grid .recipe-card:nth-child(1),
+.recipes-list .recipe-card:nth-child(1) { 
+  animation-delay: 0.1s; 
+}
+.recipes-grid .recipe-card:nth-child(2),
+.recipes-list .recipe-card:nth-child(2) { 
+  animation-delay: 0.2s; 
+}
+
+.achievements-grid .achievement-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.achievements-grid .achievement-card:nth-child(1) { animation-delay: 0.1s; }
+.achievements-grid .achievement-card:nth-child(2) { animation-delay: 0.2s; }
+.achievements-grid .achievement-card:nth-child(3) { animation-delay: 0.3s; }
+
+/* Progress bar animation */
+.progress-fill {
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: progressGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes progressGlow {
+  from {
+    box-shadow: 0 0 5px var(--success);
+  }
+  to {
+    box-shadow: 0 0 15px var(--success);
+  }
+}
+
+/* Toast animations */
+.toast {
+  animation: toastSlideIn 0.3s ease-out;
+}
+
+.toast.removing {
+  animation: toastSlideOut 0.3s ease-out;
+}
+
+@keyframes toastSlideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes toastSlideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+/* Loading spinner */
+.loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hover effects for interactive elements */
+.nav-link,
+.back-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after,
+.back-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.back-link:hover::after {
+  width: 100%;
+}
+
+/* Ingredient item interactions */
+.ingredient-item {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.ingredient-item:hover {
+  transform: translateX(2px);
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Step item interactions */
+.step-item {
+  transition: all 0.3s ease;
+}
+
+.step-item:hover {
+  transform: translateX(4px);
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.step-item.completed:hover {
+  background-color: hsl(142, 76%, 36%, 0.15);
+}
+
+/* Sidebar animations */
+.sidebar {
+  animation: fadeInRight 0.8s ease-out 0.3s both;
+}
+
+.sidebar-card {
+  transition: all 0.3s ease;
+}
+
+.sidebar-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+}
+
+/* Mobile responsive animations */
+@media (max-width: 768px) {
+  .hero-content,
+  .hero-image {
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  .sidebar {
+    animation: fadeInUp 0.6s ease-out 0.2s both;
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .floating-decoration {
+    animation: none;
+  }
+  
+  .eco-badge {
+    animation: none;
+  }
+  
+  .achievement-card.earned,
+  .achievement-item.earned {
+    animation: none;
+  }
+  
+  .progress-fill {
+    animation: none;
+  }
+}
