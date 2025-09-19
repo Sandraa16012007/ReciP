@@ -1,97 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ReciP - Ingredients</title>
-  <link rel="stylesheet" href="../styles/styles.css">
-  <link rel="stylesheet" href="../styles/ingredients-styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
-  <script src="../script.js" defer></script>
-</head>
-<body class="ingredients-page">
-  <!-- Floating Food Background -->
-  <div class="floating-food">🍎</div>
-  <div class="floating-food">🍕</div>
-  <div class="floating-food">🥕</div>
-  <div class="floating-food">🍗</div>
-  <div class="floating-food">🥦</div>
-  <div class="floating-food">🍋</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReciP - Ingredients</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/ingredients-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../script.js" defer></script>
+  </head>
+  <body class="ingredients-page">
+    <!-- Floating Food Background -->
+    <div class="floating-food">🍎</div>
+    <div class="floating-food">🍕</div>
+    <div class="floating-food">🥕</div>
+    <div class="floating-food">🍗</div>
+    <div class="floating-food">🥦</div>
+    <div class="floating-food">🍋</div>
 
-  <!-- Navbar -->
-  <header>
-    <div class="logo">ReciP</div>
-    <nav class="nav-links">
-      <a href="../index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="about.html#contact">Contact</a>
-    </nav>
-    <div class="hamburger">☰</div>
-  </header>
+    <!-- Navbar -->
+    <header>
+      <div class="logo">ReciP</div>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="about.html#contact">Contact</a>
+      </nav>
+      <div class="hamburger">☰</div>
+    </header>
 
-  <!-- Main Section -->
-  <section class="ingredients-container">
-    <h1>What ingredients do you have?</h1>
-    <p class="subtitle">Tell us which ingredients you have available and we'll create magic ✨</p>
+    <!-- Main Section -->
+    <section class="ingredients-container">
+      <h1>What ingredients do you have?</h1>
+      <p class="subtitle">
+        Tell us which ingredients you have available and we'll create magic ✨
+      </p>
 
-    <div class="input-sections">
-      <!-- Upload Image -->
-      <div class="upload-box">
-        <h2><div class="method-icon">📸</div>Snap Your Ingredients</h2>
-        <p>Upload a photo of your fridge, groceries, or leftovers — anything you’ve got, and we’ll turn it into recipes for you!</p>
-        <label class="upload-btn">
-          <input type="file" id="ingredient-upload" accept="image/*" hidden>
-          Choose Photo
-        </label>
+      <div class="input-sections">
+        <!-- Upload Image -->
+        <div class="upload-box">
+          <h2>
+            <div class="method-icon">📸</div>
+            Snap Your Ingredients
+          </h2>
+          <p>
+            Upload a photo of your fridge, groceries, or leftovers — anything
+            you’ve got, and we’ll turn it into recipes for you!
+          </p>
+          <label class="upload-btn">
+            <input type="file" id="ingredient-upload" accept="image/*" hidden />
+            Choose Photo
+          </label>
 
-        <!-- Integrated status and spinner inside the upload box -->
-        <div class="upload-feedback">
-          <div id="loading-spinner" class="spinner" style="display:none;"></div>
-          <p id="upload-status"></p>
+          <!-- Integrated status and spinner inside the upload box -->
+          <div class="upload-feedback">
+            <div
+              id="loading-spinner"
+              class="spinner"
+              style="display: none"
+            ></div>
+            <p id="upload-status"></p>
+          </div>
+        </div>
+
+        <!-- Type Ingredients -->
+        <div class="text-box">
+          <h2>
+            <div class="method-icon">✏️</div>
+            Type Your Ingredients
+          </h2>
+          <p>List what you have, separated by commas</p>
+          <textarea
+            placeholder="e.g., tomatoes, onions, garlic, rice, chicken..."
+            maxlength="500"
+          ></textarea>
+          <div class="char-count">0/500 characters</div>
         </div>
       </div>
 
-      <!-- Type Ingredients -->
-      <div class="text-box">
-        <h2><div class="method-icon">✏️</div> Type Your Ingredients</h2>
-        <p>List what you have, separated by commas</p>
-        <textarea placeholder="e.g., tomatoes, onions, garlic, rice, chicken..." maxlength="500"></textarea>
-        <div class="char-count">0/500 characters</div>
+      <!-- Buttons -->
+      <div class="btn-group">
+        <a href="../index.html" class="btn secondary"
+          >←&nbsp;&nbsp;Back to Home</a
+        >
+        <a href="recipes.html"
+          ><button class="btn primary">Find Recipes</button></a
+        >
       </div>
-    </div>
 
-    <!-- Buttons -->
-    <div class="btn-group">
-      <a href="../index.html" class="btn secondary">←&nbsp;&nbsp;Back to Home</a>
-      <a href="recipes.html"><button class="btn primary">Find Recipes</button></a>
-    </div>
-
-    <!-- Common Ingredients -->
-    <div class="common-ingredients">
-      <p>Need inspiration? Try these common ingredients:</p>
-      <div class="tags">
-        <span>🍗 Chicken</span>
-        <!-- dynamically rendered -->
+      <!-- Common Ingredients -->
+      <div class="common-ingredients">
+        <p>Need inspiration? Try these common ingredients:</p>
+        <div class="tags">
+          <span>🍗 Chicken</span>
+          <!-- dynamically rendered -->
+        </div>
       </div>
+    </section>
+    <footer>
+      <p>© 2025 ReciP | All Rights Reserved</p>
+    </footer>
+
+    <div
+      id="loading-spinner"
+      style="display: none; text-align: center; margin-top: 20px"
+    >
+      <div
+        class="spinner"
+        style="
+          border: 4px solid #f3f3f3;
+          border-top: 4px solid #ff9019;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          animation: spin 1s linear infinite;
+          margin: auto;
+        "
+      ></div>
     </div>
-  </section>
-  <footer>
-    <p>© 2025 ReciP | All Rights Reserved</p>
-  </footer>
 
-  <div id="loading-spinner" style="display:none; text-align:center; margin-top:20px;">
-    <div class="spinner" style="border:4px solid #f3f3f3; border-top:4px solid #ff9019; border-radius:50%; width:40px; height:40px; animation:spin 1s linear infinite; margin:auto;"></div>
-  </div>
-
-  <style>
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  </style>
-
-
-</body>
+    <style>
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </body>
 </html>

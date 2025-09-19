@@ -18,15 +18,21 @@ body {
   width: 200%;
   height: 200%;
   background: radial-gradient(circle at 30% 30%, #e7fbea, transparent 60%),
-              radial-gradient(circle at 70% 70%, #e0f7fa, transparent 60%),
-              radial-gradient(circle at 50% 90%, #f1f8e9, transparent 70%);
+    radial-gradient(circle at 70% 70%, #e0f7fa, transparent 60%),
+    radial-gradient(circle at 50% 90%, #f1f8e9, transparent 70%);
   animation: move-bg 15s infinite alternate ease-in-out;
   z-index: -2;
 }
 @keyframes move-bg {
-  0% { transform: translate(0,0) scale(1); }
-  50% { transform: translate(-10%, -10%) scale(1.2); }
-  100% { transform: translate(0,0) scale(1); }
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-10%, -10%) scale(1.2);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
 }
 
 /* Navbar */
@@ -37,16 +43,22 @@ header {
   padding: 25px 70px;
   position: sticky;
   top: 0;
-  width:100%;
+  width: 100%;
   z-index: 10;
-  background: rgba(255,255,255,0.7);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   animation: slideDown 1s ease-out;
 }
 @keyframes slideDown {
-  from { transform: translateY(-100px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 header .logo {
@@ -98,17 +110,15 @@ header .logo {
   color: #ff9800;
 }
 
-
 /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #f1fdf1;
-      color: #555;
-      margin-top: 60px;
-      font-size: 14px;
-    }
-
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f1fdf1;
+  color: #555;
+  margin-top: 60px;
+  font-size: 14px;
+}
 
 /* Hero Section */
 .hero {
@@ -119,8 +129,14 @@ header .logo {
   animation: fadeUp 1.2s ease-out;
 }
 @keyframes fadeUp {
-  from { transform: translateY(40px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .badge {
@@ -135,8 +151,13 @@ header .logo {
   animation: pulse 2s infinite;
 }
 @keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.1); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 .hero h1 {
@@ -149,8 +170,8 @@ header .logo {
 }
 
 .highlight {
-  color: #FF8500;
-  border-bottom: 3px solid #FF8500;
+  color: #ff8500;
+  border-bottom: 3px solid #ff8500;
 }
 
 .hero p {
@@ -180,12 +201,12 @@ header .logo {
 .btn-primary {
   background: #ff9800;
   color: white;
-  box-shadow: 0 4px 10px rgba(255,152,0,0.3);
+  box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
 }
 .btn-primary:hover {
   background: #e68a00;
   transform: scale(1.05);
-  box-shadow: 0 6px 14px rgba(255,152,0,0.5);
+  box-shadow: 0 6px 14px rgba(255, 152, 0, 0.5);
 }
 .secondary {
   border: 2px solid #2e7d32;
@@ -197,53 +218,53 @@ header .logo {
   transform: scale(1.05);
 }
 
-
-#why-choose, #how-it-works {
-      max-width: 1100px;
-      margin: 80px auto;
-      padding: 40px 20px;
-      text-align: center;
-      position: relative;
-      z-index: 5;
-      animation: fadeUp 1.5s ease both;
-    }
-    section h2 {
-      font-size: 36px;
-      color: #4b9049;
-      margin-bottom: 20px;
-      animation: bounceIn 1.2s ease;
-    }
-    section p {
-      font-size: 18px;
-      color: #444;
-      margin-bottom: 40px;
-      line-height: 1.6;
-    }
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-    .feature-box {
-      background: #fff;
-      border-radius: 16px;
-      padding: 30px 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
-    }
-    .feature-box:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-    }
-    .feature-box span {
-      font-size: 40px;
-      display: block;
-      margin-bottom: 15px;
-    }
-    .feature-box h3 {
-      margin-bottom: 10px;
-      color: #2d7a2d;
-    }
+#why-choose,
+#how-it-works {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  animation: fadeUp 1.5s ease both;
+}
+section h2 {
+  font-size: 36px;
+  color: #4b9049;
+  margin-bottom: 20px;
+  animation: bounceIn 1.2s ease;
+}
+section p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+.feature-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+.feature-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+.feature-box span {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 15px;
+}
+.feature-box h3 {
+  margin-bottom: 10px;
+  color: #2d7a2d;
+}
 
 /* Floating Emojis */
 .floating-bg span {
@@ -252,37 +273,94 @@ header .logo {
   opacity: 0.7;
   animation: float 14s infinite ease-in-out;
 }
-.floating-bg span:nth-child(1) { top: 30%; left: 10%; animation-delay: 0s; }
-.floating-bg span:nth-child(2) { top: 80%; left: 20%; animation-delay: 1s; }
-.floating-bg span:nth-child(3) { top: 60%; left: 80%; animation-delay: 2s; }
-.floating-bg span:nth-child(4) { top: 40%; left: 70%; animation-delay: 3s; }
-.floating-bg span:nth-child(5) { top: 90%; left: 50%; animation-delay: 2s; }
-.floating-bg span:nth-child(6) { top: 10%; left: 60%; animation-delay: 5s; }
-.floating-bg span:nth-child(7) { top: 50%; left: 5%; animation-delay: 3s; }
-.floating-bg span:nth-child(8) { top: 75%; left: 90%; animation-delay: 3s; }
-.floating-bg span:nth-child(9) { top: 20%; left: 40%; animation-delay: 2s; }
-.floating-bg span:nth-child(10) { top: 95%; left: 75%; animation-delay: 5s; }
-.floating-bg span:nth-child(11) { top: 65%; left: 30%; animation-delay: 3s; }
-.floating-bg span:nth-child(12) { top: 35%; left: 85%; animation-delay: 1s; }
+.floating-bg span:nth-child(1) {
+  top: 30%;
+  left: 10%;
+  animation-delay: 0s;
+}
+.floating-bg span:nth-child(2) {
+  top: 80%;
+  left: 20%;
+  animation-delay: 1s;
+}
+.floating-bg span:nth-child(3) {
+  top: 60%;
+  left: 80%;
+  animation-delay: 2s;
+}
+.floating-bg span:nth-child(4) {
+  top: 40%;
+  left: 70%;
+  animation-delay: 3s;
+}
+.floating-bg span:nth-child(5) {
+  top: 90%;
+  left: 50%;
+  animation-delay: 2s;
+}
+.floating-bg span:nth-child(6) {
+  top: 10%;
+  left: 60%;
+  animation-delay: 5s;
+}
+.floating-bg span:nth-child(7) {
+  top: 50%;
+  left: 5%;
+  animation-delay: 3s;
+}
+.floating-bg span:nth-child(8) {
+  top: 75%;
+  left: 90%;
+  animation-delay: 3s;
+}
+.floating-bg span:nth-child(9) {
+  top: 20%;
+  left: 40%;
+  animation-delay: 2s;
+}
+.floating-bg span:nth-child(10) {
+  top: 95%;
+  left: 75%;
+  animation-delay: 5s;
+}
+.floating-bg span:nth-child(11) {
+  top: 65%;
+  left: 30%;
+  animation-delay: 3s;
+}
+.floating-bg span:nth-child(12) {
+  top: 35%;
+  left: 85%;
+  animation-delay: 1s;
+}
 
 @keyframes float {
-  0% { transform: translateY(0px) rotate(0deg); opacity: 0.6; }
-  50% { transform: translateY(-40px) rotate(20deg); opacity: 1; }
-  100% { transform: translateY(0px) rotate(0deg); opacity: 0.6; }
+  0% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-40px) rotate(20deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.6;
+  }
 }
 
 /* Responsive */
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
-    background: rgba(255,255,255,0.95);
+    background: rgba(255, 255, 255, 0.95);
     position: absolute;
     top: 70px;
     right: 20px;
     border-radius: 12px;
     padding: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   .nav-links.active {
     display: flex;
@@ -293,8 +371,14 @@ header .logo {
   }
 }
 @keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.9); }
-  to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes fadeInUp {
