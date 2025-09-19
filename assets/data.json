@@ -2,110 +2,274 @@
   "commonIngredients": [
     "Chicken",
     "Rice",
-    "Eggs",
-    "Pasta",
-    "Potatoes",
-    "Onions",
-    "Garlic",
-    "Tomatoes"
+    "Egg",
+    "Cheese",
+    "Potato",
+    "Onion",
+    "Bread",
+    "Tomato"
   ],
 
-  "recipes": [
+   "recipes": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Mediterranean Garden Salad",
       "time": "15 mins",
       "servings": "2 servings",
       "difficulty": "Easy",
-      "desc": "Fresh and vibrant salad with tomatoes, cucumbers, olives, and feta cheese dressed in olive oil and herbs.",
+      "desc": "Fresh and vibrant salad with tomatoes, cucumbers, lettuce, and paneer dressed in olive oil and herbs.",
       "image": "Mediterranean-Garden-Salad.jpg",
       "badge": "Quick",
-      "tags": ["Tomatoes", "Cucumber", "Feta"],
-      "ingredients": ["Tomatoes", "Cucumber", "Olives", "Feta", "Olive Oil", "Herbs"]
+      "tags": ["Tomato", "Cucumber", "Lettuce", "Paneer"],
+      "ingredients": ["Tomato", "Cucumber", "Lettuce", "Paneer", "Olive Oil", "Oregano", "Salt", "Black Pepper"],
+      "steps": [
+        "Wash and chop tomato, cucumber, and lettuce.",
+        "Cube the paneer and lightly sauté if desired.",
+        "Mix vegetables and paneer in a bowl.",
+        "Drizzle olive oil, sprinkle oregano, salt, and black pepper.",
+        "Toss well and serve fresh."
+      ],
+      "ecoImpact": {
+        "foodWasteSaved": "Saved approx. 120g fresh veggies from spoilage",
+        "carbonSaved": "Reduced 0.3 kg CO₂ emissions vs packaged salad"
+      },
+      "tip": "Use leftover cucumber and lettuce in smoothies or wraps to reduce waste."
     },
     {
-      "id": 2,
-      "title": "Garlic Butter Chicken",
+      "id": "2",
+      "title": "Grilled Cheese Sandwich",
+      "time": "10 mins",
+      "servings": "1 serving",
+      "difficulty": "Easy",
+      "desc": "Classic comfort food with golden bread and gooey cheese filling.",
+      "image": "Grilled-Cheese-Sandwich.jpg",
+      "badge": "Snack",
+      "tags": ["Bread", "Cheese", "Butter", "Tomato"],
+      "ingredients": ["Bread", "Butter", "Cheese", "Tomato", "Salt", "Black Pepper"],
+      "steps": [
+        "Spread butter on bread slices.",
+        "Place cheese and tomato slices between the bread.",
+        "Grill on medium heat until golden brown.",
+        "Serve hot."
+      ],
+      "ecoImpact": {
+        "foodWasteSaved": "Saved 80g bread from going stale",
+        "carbonSaved": "Reduced 0.2 kg CO₂ emissions vs takeout"
+      },
+      "tip": "Toast leftover bread ends for croutons instead of tossing them."
+    },
+    {
+      "id": "3",
+      "title": "Masala Omelette",
+      "time": "12 mins",
+      "servings": "1 serving",
+      "difficulty": "Easy",
+      "desc": "Spicy omelette with onion, tomato, capsicum, and a hint of coriander.",
+      "image": "Masala-Omelette.jpg",
+      "badge": "Protein",
+      "tags": ["Egg", "Onion", "Tomato", "Capsicum"],
+      "ingredients": ["Egg", "Onion", "Tomato", "Capsicum", "Salt", "Black Pepper", "Coriander", "Olive Oil"],
+      "steps": [
+        "Beat eggs in a bowl with salt and black pepper.",
+        "Chop onion, tomato, and capsicum.",
+        "Heat olive oil in a pan, sauté vegetables for 2 minutes.",
+        "Pour eggs over vegetables and cook until set.",
+        "Fold and serve hot."
+      ],
+      "ecoImpact": {
+        "foodWasteSaved": "Saved 100g vegetables from being discarded",
+        "carbonSaved": "Avoided 0.25 kg CO₂ emissions by cooking at home"
+      },
+      "tip": "Use leftover chopped veggies from dinner prep to make omelettes."
+    },
+    {
+      "id": "4",
+      "title": "Vegetable Pulao",
       "time": "30 mins",
       "servings": "3 servings",
-      "difficulty": "Hard",
-      "desc": "Juicy chicken cooked in a rich garlic butter sauce, perfect with rice or bread.",
-      "image": "Garlic-Butter-Chicken.jpg",
-      "badge": "Popular",
-      "tags": ["Chicken", "Garlic", "Butter"],
-      "ingredients": ["Chicken", "Garlic", "Butter", "Parsley"]
+      "difficulty": "Medium",
+      "desc": "Aromatic rice cooked with peas, carrots, corn, and spices.",
+      "image": "Vegetable-Pulao.jpg",
+      "badge": "Wholesome",
+      "tags": ["Rice", "Peas", "Carrot", "Corn"],
+      "ingredients": ["Rice", "Peas", "Carrot", "Corn", "Onion", "Garlic", "Ginger", "Turmeric", "Salt", "Olive Oil"],
+      "steps": [
+        "Rinse rice and soak for 10 minutes.",
+        "Heat olive oil, sauté onion, garlic, and ginger.",
+        "Add chopped carrot, peas, and corn.",
+        "Add rice and water, season with turmeric and salt.",
+        "Cook until rice is done and fluffy."
+      ],
+      "ecoImpact": {
+        "foodWasteSaved": "Saved 250g mixed veggies",
+        "carbonSaved": "Reduced 0.4 kg CO₂ vs ordering fried rice"
+      },
+      "tip": "Store leftover pulao in fridge; reheat with splash of water to prevent drying."
     },
     {
-      "id": 3,
-      "title": "Classic Fried Rice",
+      "id": "5",
+      "title": "Paneer Butter Masala",
+      "time": "35 mins",
+      "servings": "4 servings",
+      "difficulty": "Medium",
+      "desc": "Creamy curry with paneer, tomato, butter, and spices.",
+      "image": "Paneer-Butter-Masala.jpeg",
+      "badge": "Festive",
+      "tags": ["Paneer", "Tomato", "Butter", "Spices"],
+      "ingredients": ["Paneer", "Tomato", "Onion", "Garlic", "Ginger", "Butter", "Turmeric", "Red Chili Powder", "Coriander", "Salt"],
+      "steps": [
+        "Heat butter in a pan, sauté onion, garlic, and ginger.",
+        "Add tomato puree and spices, cook until oil separates.",
+        "Add paneer cubes and simmer for 5 minutes.",
+        "Garnish with coriander and serve hot with rice or bread."
+      ],
+      "ecoImpact": {
+        "foodWasteSaved": "Saved 300g dairy and vegetables at home",
+        "carbonSaved": "Reduced 0.5 kg CO₂ vs ordering online"
+      },
+      "tip": "Use leftover curry as sandwich filling next day."
+    },
+    {
+      "id": "6",
+      "title": "Vegetable Sandwich",
+      "time": "15 mins",
+      "servings": "2 servings",
+      "difficulty": "Easy",
+      "desc": "Healthy sandwich with bread, cucumber, tomato, carrot, and lettuce.",
+      "image": "Vegetable-Sandwich.jpg",
+      "badge": "Quick",
+      "tags": ["Bread", "Cucumber", "Tomato", "Carrot", "Lettuce"],
+      "ingredients": ["Bread", "Cucumber", "Tomato", "Carrot", "Lettuce", "Mayonnaise", "Salt", "Black Pepper"],
+      "steps": [
+        "Spread mayonnaise on bread slices.",
+        "Layer cucumber, tomato, carrot, and lettuce.",
+        "Season with salt and pepper.",
+        "Close sandwich and cut diagonally.",
+        "Serve fresh."
+      ],
+      "ecoImpact": {
+        "foodWasteSaved": "Saved 150g fresh produce",
+        "carbonSaved": "Reduced 0.3 kg CO₂ emissions by home prep"
+      },
+      "tip": "Wrap sandwiches in cloth instead of plastic foil."
+    },
+    {
+      "id": "7",
+      "title": "Aloo Gobi",
+      "time": "25 mins",
+      "servings": "3 servings",
+      "difficulty": "Medium",
+      "desc": "Dry curry of potato and cauliflower, flavored with spices.",
+      "image": "Aloo-Gobi.jpg",
+      "badge": "Classic",
+      "tags": ["Potato", "Cauliflower", "Spices"],
+      "ingredients": ["Potato", "Cauliflower", "Onion", "Garlic", "Ginger", "Turmeric", "Red Chili Powder", "Salt", "Olive Oil"],
+      "steps": [
+        "Heat olive oil, sauté onion, garlic, and ginger.",
+        "Add potato and cauliflower, cook 10 mins.",
+        "Add spices and salt, cook until vegetables are tender.",
+        "Garnish with coriander and serve hot."
+      ],
+      "ecoImpact": {
+        "foodWasteSaved": "Saved 200g cauliflower and potato",
+        "carbonSaved": "Reduced 0.35 kg CO₂ emissions vs takeout"
+      },
+      "tip": "Use potato peels to make crispy chips."
+    },
+    {
+      "id": "8",
+      "title": "Fruit Yogurt Bowl",
+      "time": "8 mins",
+      "servings": "1 serving",
+      "difficulty": "Easy",
+      "desc": "Refreshing yogurt bowl topped with banana, apple, and honey.",
+      "image": "Fruit-Yogurt-Bowl.jpg",
+      "badge": "Healthy",
+      "tags": ["Yogurt", "Banana", "Apple", "Honey"],
+      "ingredients": ["Yogurt", "Banana", "Apple", "Honey", "Salt"],
+      "steps": [
+        "Slice banana and apple.",
+        "Spoon yogurt into a bowl.",
+        "Top with banana, apple, and drizzle honey.",
+        "Serve chilled."
+      ],
+      "ecoImpact": {
+        "foodWasteSaved": "Saved 200g fruits from spoilage",
+        "carbonSaved": "Reduced 0.2 kg CO₂ vs packaged snack"
+      },
+      "tip": "Freeze overripe bananas to blend into smoothies."
+    },
+    {
+      "id":"9",
+      "title": "Potato Peel Chips",
       "time": "20 mins",
       "servings": "2 servings",
-      "difficulty": "Quick",
-      "desc": "Quick and delicious fried rice with eggs, veggies, and soy sauce.",
-      "image": "Classic-Fried-Rice.jpeg",
-      "badge": "Quick",
-      "tags": ["Rice", "Eggs", "Vegetables"],
-      "ingredients": ["Rice", "Eggs", "Carrots", "Peas", "Soy Sauce", "Onions"]
-    },
-    {
-      "id": 4,
-      "title": "Spaghetti Aglio e Olio",
-      "time": "25 mins",
-      "servings": "2 servings",
-      "difficulty": "Medium",
-      "desc": "Simple Italian pasta with garlic, olive oil, and chili flakes.",
-      "image": "Spaghetti.jpg",
-      "badge": "Vegetarian",
-      "tags": ["Pasta", "Garlic", "Olive Oil"],
-      "ingredients": ["Pasta", "Garlic", "Chili Flakes", "Olive Oil", "Parsley"]
-    },
-    {
-      "id": 5,
-      "title": "Cheesy Mashed Potatoes",
-      "time": "40 mins",
-      "servings": "4 servings",
       "difficulty": "Easy",
-      "desc": "Creamy mashed potatoes blended with melted cheese for the ultimate comfort food.",
-      "image": "Cheesy-Mashed-Potatoes.jpg",
-      "badge": "Comfort Food",
-      "tags": ["Potatoes", "Cheese"],
-      "ingredients": ["Potatoes", "Cheese", "Butter", "Milk", "Salt", "Pepper"]
+      "desc": "Crispy chips made from leftover potato peels.",
+      "image": "Potato-Peel-Chips.jpg",
+      "badge": "Snack",
+      "tags": ["Potato", "Olive Oil", "Salt", "Black Pepper"],
+      "ingredients": ["Potato", "Olive Oil", "Salt", "Black Pepper"],
+      "steps": [
+        "Wash potato peels thoroughly to remove dirt.",
+        "Pat them dry.",
+        "Toss peels with olive oil, salt, and black pepper.",
+        "Spread on a baking tray and bake at 200°C for 15–20 mins until crispy.",
+        "Serve hot."
+      ],
+      "ecoImpact": {
+        "foodWasteSaved": "Saved 300g potato waste",
+        "carbonSaved": "Reduced 0.4 kg CO₂ emissions"
+      },
+      "tip": "Turn potato peels into crunchy snacks instead of discarding."
     },
     {
-      "id": 6,
-      "title": "Spanish Omelette",
-      "time": "25 mins",
-      "servings": "2 servings",
-      "difficulty": "Easy",
-      "desc": "Egg-based dish packed with onions, potatoes, and herbs.",
-      "image": "Spanish-Omelette.jpg",
-      "badge": "Healthy",
-      "tags": ["Eggs", "Onions", "Potatoes"],
-      "ingredients": ["Eggs", "Onions", "Potatoes", "Olive Oil", "Salt", "Pepper"]
+    "id": "10",
+    "title": "Grilled Chicken Sandwich",
+    "time": "20 mins",
+    "servings": "2 servings",
+    "difficulty": "Easy",
+    "desc": "Juicy grilled chicken with fresh vegetables in a sandwich.",
+    "image": "Grilled-Chicken-Sandwich.jpeg",
+    "badge": "Quick",
+    "tags": ["Chicken", "Bread", "Lettuce", "Tomato"],
+    "ingredients": ["Chicken", "Bread", "Lettuce", "Tomato", "Mayonnaise", "Salt", "Black Pepper", "Olive Oil"],
+    "steps": [
+      "Season chicken with salt and black pepper.",
+      "Grill the chicken in olive oil until fully cooked.",
+      "Toast the bread slices lightly.",
+      "Spread mayonnaise on bread and layer with lettuce, tomato, and grilled chicken.",
+      "Serve immediately."
+    ],
+    "ecoImpact": {
+      "foodWasteSaved": "Saved 150g leftover chicken and veggies",
+      "carbonSaved": "Reduced 0.4 kg CO₂ emissions by home-cooking instead of takeout"
     },
-    {
-      "id": 7,
-      "title": "Tomato Basil Soup",
-      "time": "35 mins",
-      "servings": "3 servings",
-      "difficulty": "Quick",
-      "desc": "Warm and comforting soup made with fresh tomatoes and basil.",
-      "image": "Tomato-Basil-Soup.jpg",
-      "badge": "Vegan",
-      "tags": ["Tomatoes", "Basil"],
-      "ingredients": ["Tomatoes", "Basil", "Onions", "Garlic", "Vegetable Stock"]
+    "tip": "Use leftover grilled chicken from dinner to make sandwiches the next day."
+  },
+  {
+    "id": "11",
+    "title": "Chicken & Vegetable Stir Fry",
+    "time": "25 mins",
+    "servings": "3 servings",
+    "difficulty": "Medium",
+    "desc": "Quick stir fry with chicken, capsicum, carrot, and peas in light seasoning.",
+    "image": "Chicken-Veggie-Stir-Fry.jpg",
+    "badge": "Healthy",
+    "tags": ["Chicken", "Carrot", "Capsicum", "Peas"],
+    "ingredients": ["Chicken", "Carrot", "Capsicum", "Peas", "Garlic", "Olive Oil", "Salt", "Black Pepper", "Lemon"],
+    "steps": [
+      "Cut chicken into bite-sized pieces and season with salt and black pepper.",
+      "Heat olive oil in a pan and sauté garlic.",
+      "Add chicken and cook until lightly browned.",
+      "Add carrot, capsicum, and peas; stir fry 5–7 mins.",
+      "Squeeze lemon juice before serving and toss well."
+    ],
+    "ecoImpact": {
+      "foodWasteSaved": "Saved 200g leftover chicken and vegetables",
+      "carbonSaved": "Reduced 0.45 kg CO₂ emissions vs takeout meal"
     },
-    {
-      "id": 8,
-      "title": "Chicken Pasta Bake",
-      "time": "45 mins",
-      "servings": "4 servings",
-      "difficulty": "Medium",
-      "desc": "Baked pasta dish loaded with chicken, cheese, and tomato sauce.",
-      "image": "Chicken-Pasta-Bake.jpg",
-      "badge": "Family Meal",
-      "tags": ["Chicken", "Pasta", "Cheese"],
-      "ingredients": ["Chicken", "Pasta", "Tomatoes", "Cheese", "Garlic", "Basil"]
-    }
+    "tip": "Use leftover vegetables from fridge to reduce food waste."
+  }
   ]
 }
