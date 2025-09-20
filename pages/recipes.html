@@ -1,93 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ReciP - Recipes For You</title>
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <link rel="stylesheet" href="../styles/recipes-styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap"
-      rel="stylesheet"
-    />
-    <script src="../script.js" defer></script>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <header>
-      <div class="logo">ReciP</div>
-      <nav class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="about.html#contact">Contact</a>
-      </nav>
-      <div class="hamburger">☰</div>
-    </header>
 
-    <!-- Heading -->
-    <div class="heading">
-      <h1>Recipes for You</h1>
-      <p>
-        Based on your ingredients, here are some delicious recipes you can make
-        right now!
-      </p>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReciP - Recipes For You</title>
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <link rel="stylesheet" href="../styles/recipes-styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet" />
+  <script src="../script.js" defer></script>
+</head>
 
-    <!-- Recipe Cards -->
-    <div class="cards">
-      <div class="card">
-        <div class="card-header">
-          <img
-            class="recipe-image"
-            src="../assets/Creamy-Garlic-Pasta.jpg"
-            alt="Creamy Garlic Pasta"
-          />
-          <span class="badge">Easy</span>
-        </div>
-        <div class="card-body">
-          <h3>Creamy Garlic Pasta</h3>
-          <div class="meta">⏱ 25 mins • 🍽 4 servings</div>
-          <p class="desc">
-            A rich and creamy pasta dish with garlic, herbs, and parmesan cheese
-            that’s perfect for any weeknight dinner.
-          </p>
-          <div class="tags">
-            <span class="tag">Pasta</span>
-            <span class="tag">Garlic</span>
-            <span class="tag">Cream</span>
-          </div>
-          <a href="recipe-info.html?id=${encodeURIComponent(recipe.id)}" class="recipe-link">
-            View Recipe <span class="link-arrow">→</span>
-          </a>
-        </div>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">ReciP</div>
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="about.html#contact">Contact</a>
+      <a href="dashboard.html">Profile</a>
+    </nav>
+    <div class="hamburger">☰</div>
+  </header>
+
+  <!-- Heading -->
+  <div class="heading">
+    <h1>Recipes for You</h1>
+    <p>
+      Based on your ingredients, here are some delicious recipes you can make
+      right now!
+    </p>
+  </div>
+
+  <!-- Recipe Cards -->
+  <div class="cards">
+    <div class="card">
+      <div class="card-header">
+        <img class="recipe-image" src="../assets/Creamy-Garlic-Pasta.jpg" alt="Creamy Garlic Pasta" />
+        <span class="badge">Easy</span>
       </div>
-
-      <div class="card"></div>
-        
+      <div class="card-body">
+        <h3>Creamy Garlic Pasta</h3>
+        <div class="meta">⏱ 25 mins • 🍽 4 servings</div>
+        <p class="desc">
+          A rich and creamy pasta dish with garlic, herbs, and parmesan cheese
+          that’s perfect for any weeknight dinner.
+        </p>
+        <div class="tags">
+          <span class="tag">Pasta</span>
+          <span class="tag">Garlic</span>
+          <span class="tag">Cream</span>
+        </div>
+        <a href="recipe-info.html?id=${encodeURIComponent(recipe.id)}" class="recipe-link">
+          View Recipe <span class="link-arrow">→</span>
+        </a>
+      </div>
     </div>
 
-    <!-- Buttons -->
-    <div class="btn-container">
-      <a href="ingredients.html"
-        ><button class="btn btn-outline">+ Add More Ingredients</button></a
-      >
-      <a href="recipes.html"
-        ><button class="btn btn-primary">Get More Recipes</button></a
-      >
-    </div>
+    <div class="card"></div>
 
-    <!-- Floating Food Background -->
-    <div class="floating-food">🍎</div>
-    <div class="floating-food">🍕</div>
-    <div class="floating-food">🥕</div>
-    <div class="floating-food">🍗</div>
-    <div class="floating-food">🥦</div>
-    <div class="floating-food">🍋</div>
+  </div>
 
-    <footer>
-      <p>© 2025 ReciP | All Rights Reserved</p>
-    </footer>
-  </body>
+  <!-- Buttons -->
+  <div class="btn-container">
+    <a href="ingredients.html"><button class="btn btn-outline">+ Add More Ingredients</button></a>
+    <a href="recipes.html"><button class="btn btn-primary">Get More Recipes</button></a>
+  </div>
+
+  <!-- Floating Food Background -->
+  <div class="floating-food">🍎</div>
+  <div class="floating-food">🍕</div>
+  <div class="floating-food">🥕</div>
+  <div class="floating-food">🍗</div>
+  <div class="floating-food">🥦</div>
+  <div class="floating-food">🍋</div>
+
+  <footer>
+    <p>© 2025 ReciP | All Rights Reserved</p>
+  </footer>
+</body>
+
 </html>

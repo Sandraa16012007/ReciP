@@ -22,6 +22,16 @@
       "badge": "Quick",
       "tags": ["Tomato", "Cucumber", "Lettuce", "Paneer"],
       "ingredients": ["Tomato", "Cucumber", "Lettuce", "Paneer", "Olive Oil", "Oregano", "Salt", "Black Pepper"],
+      "ingredientsWithQuantity": [
+        {"name": "Tomato", "quantity": "2 medium", "unit": "pieces"},
+        {"name": "Cucumber", "quantity": "1 medium", "unit": "piece"},
+        {"name": "Lettuce", "quantity": "2 cups", "unit": "chopped"},
+        {"name": "Paneer", "quantity": "100g", "unit": "grams"},
+        {"name": "Olive Oil", "quantity": "2 tbsp", "unit": "tablespoons"},
+        {"name": "Oregano", "quantity": "1 tsp", "unit": "teaspoon"},
+        {"name": "Salt", "quantity": "to taste", "unit": ""},
+        {"name": "Black Pepper", "quantity": "1/2 tsp", "unit": "teaspoon"}
+      ],
       "steps": [
         "Wash and chop tomato, cucumber, and lettuce.",
         "Cube the paneer and lightly sauté if desired.",
@@ -46,6 +56,14 @@
       "badge": "Snack",
       "tags": ["Bread", "Cheese", "Butter", "Tomato"],
       "ingredients": ["Bread", "Butter", "Cheese", "Tomato", "Salt", "Black Pepper"],
+      "ingredientsWithQuantity": [
+        {"name": "Bread", "quantity": "2 slices", "unit": "slices"},
+        {"name": "Butter", "quantity": "1 tbsp", "unit": "tablespoon"},
+        {"name": "Cheese", "quantity": "2 slices", "unit": "slices"},
+        {"name": "Tomato", "quantity": "1 medium", "unit": "piece"},
+        {"name": "Salt", "quantity": "pinch", "unit": ""},
+        {"name": "Black Pepper", "quantity": "pinch", "unit": ""}
+      ],
       "steps": [
         "Spread butter on bread slices.",
         "Place cheese and tomato slices between the bread.",
@@ -69,6 +87,16 @@
       "badge": "Protein",
       "tags": ["Egg", "Onion", "Tomato", "Capsicum"],
       "ingredients": ["Egg", "Onion", "Tomato", "Capsicum", "Salt", "Black Pepper", "Coriander", "Olive Oil"],
+      "ingredientsWithQuantity": [
+        {"name": "Egg", "quantity": "2 large", "unit": "pieces"},
+        {"name": "Onion", "quantity": "1 small", "unit": "piece"},
+        {"name": "Tomato", "quantity": "1 medium", "unit": "piece"},
+        {"name": "Capsicum", "quantity": "1/2 medium", "unit": "piece"},
+        {"name": "Salt", "quantity": "1/2 tsp", "unit": "teaspoon"},
+        {"name": "Black Pepper", "quantity": "1/4 tsp", "unit": "teaspoon"},
+        {"name": "Coriander", "quantity": "1 tbsp", "unit": "tablespoon"},
+        {"name": "Olive Oil", "quantity": "1 tbsp", "unit": "tablespoon"}
+      ],
       "steps": [
         "Beat eggs in a bowl with salt and black pepper.",
         "Chop onion, tomato, and capsicum.",
@@ -93,6 +121,18 @@
       "badge": "Wholesome",
       "tags": ["Rice", "Peas", "Carrot", "Corn"],
       "ingredients": ["Rice", "Peas", "Carrot", "Corn", "Onion", "Garlic", "Ginger", "Turmeric", "Salt", "Olive Oil"],
+      "ingredientsWithQuantity": [
+        {"name": "Rice", "quantity": "1.5 cups", "unit": "cups"},
+        {"name": "Peas", "quantity": "1/2 cup", "unit": "cup"},
+        {"name": "Carrot", "quantity": "1 medium", "unit": "piece"},
+        {"name": "Corn", "quantity": "1/2 cup", "unit": "cup"},
+        {"name": "Onion", "quantity": "1 medium", "unit": "piece"},
+        {"name": "Garlic", "quantity": "3 cloves", "unit": "cloves"},
+        {"name": "Ginger", "quantity": "1 inch", "unit": "piece"},
+        {"name": "Turmeric", "quantity": "1/2 tsp", "unit": "teaspoon"},
+        {"name": "Salt", "quantity": "1 tsp", "unit": "teaspoon"},
+        {"name": "Olive Oil", "quantity": "2 tbsp", "unit": "tablespoons"}
+      ],
       "steps": [
         "Rinse rice and soak for 10 minutes.",
         "Heat olive oil, sauté onion, garlic, and ginger.",
@@ -117,6 +157,18 @@
       "badge": "Festive",
       "tags": ["Paneer", "Tomato", "Butter", "Spices"],
       "ingredients": ["Paneer", "Tomato", "Onion", "Garlic", "Ginger", "Butter", "Turmeric", "Red Chili Powder", "Coriander", "Salt"],
+      "ingredientsWithQuantity": [
+        {"name": "Paneer", "quantity": "250g", "unit": "grams"},
+        {"name": "Tomato", "quantity": "4 medium", "unit": "pieces"},
+        {"name": "Onion", "quantity": "2 medium", "unit": "pieces"},
+        {"name": "Garlic", "quantity": "4 cloves", "unit": "cloves"},
+        {"name": "Ginger", "quantity": "1 inch", "unit": "piece"},
+        {"name": "Butter", "quantity": "3 tbsp", "unit": "tablespoons"},
+        {"name": "Turmeric", "quantity": "1/2 tsp", "unit": "teaspoon"},
+        {"name": "Red Chili Powder", "quantity": "1 tsp", "unit": "teaspoon"},
+        {"name": "Coriander", "quantity": "2 tbsp", "unit": "tablespoons"},
+        {"name": "Salt", "quantity": "1 tsp", "unit": "teaspoon"}
+      ],
       "steps": [
         "Heat butter in a pan, sauté onion, garlic, and ginger.",
         "Add tomato puree and spices, cook until oil separates.",
@@ -140,6 +192,16 @@
       "badge": "Quick",
       "tags": ["Bread", "Cucumber", "Tomato", "Carrot", "Lettuce"],
       "ingredients": ["Bread", "Cucumber", "Tomato", "Carrot", "Lettuce", "Mayonnaise", "Salt", "Black Pepper"],
+      "ingredientsWithQuantity": [
+        {"name": "Bread", "quantity": "4 slices", "unit": "slices"},
+        {"name": "Cucumber", "quantity": "1 medium", "unit": "piece"},
+        {"name": "Tomato", "quantity": "1 large", "unit": "piece"},
+        {"name": "Carrot", "quantity": "1 medium", "unit": "piece"},
+        {"name": "Lettuce", "quantity": "4 leaves", "unit": "leaves"},
+        {"name": "Mayonnaise", "quantity": "2 tbsp", "unit": "tablespoons"},
+        {"name": "Salt", "quantity": "to taste", "unit": ""},
+        {"name": "Black Pepper", "quantity": "1/4 tsp", "unit": "teaspoon"}
+      ],
       "steps": [
         "Spread mayonnaise on bread slices.",
         "Layer cucumber, tomato, carrot, and lettuce.",
@@ -164,6 +226,17 @@
       "badge": "Classic",
       "tags": ["Potato", "Cauliflower", "Spices"],
       "ingredients": ["Potato", "Cauliflower", "Onion", "Garlic", "Ginger", "Turmeric", "Red Chili Powder", "Salt", "Olive Oil"],
+      "ingredientsWithQuantity": [
+        {"name": "Potato", "quantity": "2 large", "unit": "pieces"},
+        {"name": "Cauliflower", "quantity": "1 medium", "unit": "head"},
+        {"name": "Onion", "quantity": "1 medium", "unit": "piece"},
+        {"name": "Garlic", "quantity": "3 cloves", "unit": "cloves"},
+        {"name": "Ginger", "quantity": "1 inch", "unit": "piece"},
+        {"name": "Turmeric", "quantity": "1/2 tsp", "unit": "teaspoon"},
+        {"name": "Red Chili Powder", "quantity": "1 tsp", "unit": "teaspoon"},
+        {"name": "Salt", "quantity": "1 tsp", "unit": "teaspoon"},
+        {"name": "Olive Oil", "quantity": "2 tbsp", "unit": "tablespoons"}
+      ],
       "steps": [
         "Heat olive oil, sauté onion, garlic, and ginger.",
         "Add potato and cauliflower, cook 10 mins.",
@@ -187,6 +260,13 @@
       "badge": "Healthy",
       "tags": ["Yogurt", "Banana", "Apple", "Honey"],
       "ingredients": ["Yogurt", "Banana", "Apple", "Honey", "Salt"],
+      "ingredientsWithQuantity": [
+        {"name": "Yogurt", "quantity": "1 cup", "unit": "cup"},
+        {"name": "Banana", "quantity": "1 medium", "unit": "piece"},
+        {"name": "Apple", "quantity": "1/2 medium", "unit": "piece"},
+        {"name": "Honey", "quantity": "1 tbsp", "unit": "tablespoon"},
+        {"name": "Salt", "quantity": "pinch", "unit": ""}
+      ],
       "steps": [
         "Slice banana and apple.",
         "Spoon yogurt into a bowl.",
@@ -210,6 +290,12 @@
       "badge": "Snack",
       "tags": ["Potato", "Olive Oil", "Salt", "Black Pepper"],
       "ingredients": ["Potato", "Olive Oil", "Salt", "Black Pepper"],
+      "ingredientsWithQuantity": [
+        {"name": "Potato", "quantity": "3 large", "unit": "pieces (peels only)"},
+        {"name": "Olive Oil", "quantity": "1 tbsp", "unit": "tablespoon"},
+        {"name": "Salt", "quantity": "1/2 tsp", "unit": "teaspoon"},
+        {"name": "Black Pepper", "quantity": "1/4 tsp", "unit": "teaspoon"}
+      ],
       "steps": [
         "Wash potato peels thoroughly to remove dirt.",
         "Pat them dry.",
@@ -234,6 +320,16 @@
     "badge": "Quick",
     "tags": ["Chicken", "Bread", "Lettuce", "Tomato"],
     "ingredients": ["Chicken", "Bread", "Lettuce", "Tomato", "Mayonnaise", "Salt", "Black Pepper", "Olive Oil"],
+    "ingredientsWithQuantity": [
+      {"name": "Chicken", "quantity": "250g", "unit": "grams (breast)"},
+      {"name": "Bread", "quantity": "4 slices", "unit": "slices"},
+      {"name": "Lettuce", "quantity": "4 leaves", "unit": "leaves"},
+      {"name": "Tomato", "quantity": "1 large", "unit": "piece"},
+      {"name": "Mayonnaise", "quantity": "2 tbsp", "unit": "tablespoons"},
+      {"name": "Salt", "quantity": "1/2 tsp", "unit": "teaspoon"},
+      {"name": "Black Pepper", "quantity": "1/4 tsp", "unit": "teaspoon"},
+      {"name": "Olive Oil", "quantity": "1 tbsp", "unit": "tablespoon"}
+    ],
     "steps": [
       "Season chicken with salt and black pepper.",
       "Grill the chicken in olive oil until fully cooked.",
@@ -258,6 +354,17 @@
     "badge": "Healthy",
     "tags": ["Chicken", "Carrot", "Capsicum", "Peas"],
     "ingredients": ["Chicken", "Carrot", "Capsicum", "Peas", "Garlic", "Olive Oil", "Salt", "Black Pepper", "Lemon"],
+    "ingredientsWithQuantity": [
+      {"name": "Chicken", "quantity": "300g", "unit": "grams (boneless)"},
+      {"name": "Carrot", "quantity": "2 medium", "unit": "pieces"},
+      {"name": "Capsicum", "quantity": "1 large", "unit": "piece"},
+      {"name": "Peas", "quantity": "1/2 cup", "unit": "cup"},
+      {"name": "Garlic", "quantity": "3 cloves", "unit": "cloves"},
+      {"name": "Olive Oil", "quantity": "2 tbsp", "unit": "tablespoons"},
+      {"name": "Salt", "quantity": "1 tsp", "unit": "teaspoon"},
+      {"name": "Black Pepper", "quantity": "1/2 tsp", "unit": "teaspoon"},
+      {"name": "Lemon", "quantity": "1/2 medium", "unit": "piece"}
+    ],
     "steps": [
       "Cut chicken into bite-sized pieces and season with salt and black pepper.",
       "Heat olive oil in a pan and sauté garlic.",

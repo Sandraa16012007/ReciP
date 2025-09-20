@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - ReciP</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #f0f9f0 0%, #e8f5e8 100%);
+            color: #2d3748;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .floating-bg span {
+            position: absolute;
+            font-size: 38px;
+            opacity: 0.7;
+            animation: float 14s infinite ease-in-out;
+            z-index:-20;
+        }
+
+        .floating-bg span:nth-child(1) {
+            top: 30%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-bg span:nth-child(2) {
+            top: 80%;
+            left: 20%;
+            animation-delay: 1s;
+        }
+
+        .floating-bg span:nth-child(3) {
+            top: 60%;
+            left: 80%;
+            animation-delay: 2s;
+        }
+
+        .floating-bg span:nth-child(4) {
+            top: 40%;
+            left: 70%;
+            animation-delay: 3s;
+        }
+
+        .floating-bg span:nth-child(5) {
+            top: 90%;
+            left: 50%;
+            animation-delay: 2s;
+        }
+
+        .floating-bg span:nth-child(6) {
+            top: 10%;
+            left: 60%;
+            animation-delay: 5s;
+        }
+
+        .floating-bg span:nth-child(7) {
+            top: 50%;
+            left: 5%;
+            animation-delay: 3s;
+        }
+
+        .floating-bg span:nth-child(8) {
+            top: 75%;
+            left: 90%;
+            animation-delay: 3s;
+        }
+
+        .floating-bg span:nth-child(9) {
+            top: 20%;
+            left: 40%;
+            animation-delay: 2s;
+        }
+
+        .floating-bg span:nth-child(10) {
+            top: 95%;
+            left: 75%;
+            animation-delay: 5s;
+        }
+
+        .floating-bg span:nth-child(11) {
+            top: 65%;
+            left: 30%;
+            animation-delay: 3s;
+        }
+
+        .floating-bg span:nth-child(12) {
+            top: 35%;
+            left: 85%;
+            animation-delay: 1s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px) rotate(0deg);
+                opacity: 0.6;
+            }
+
+            50% {
+                transform: translateY(-40px) rotate(20deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(0px) rotate(0deg);
+                opacity: 0.6;
+            }
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .welcome-section h1 {
+            font-size: 2.5rem;
+            color: #2f7d32;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .welcome-section p {
+            color: #718096;
+            font-size: 1.1rem;
+        }
+
+        .profile-btn {
+            background: white;
+            border: 2px solid #e2e8f0;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            color: #4a5568;
+        }
+
+        .profile-btn:hover {
+            border-color: #2f7d32;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(47, 125, 50, 0.15);
+        }
+
+        /* Dashboard Grid */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border: 1px solid #f1f5f9;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Eco Points Card */
+        .eco-points {
+            position: relative;
+            background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
+            color: white;
+            overflow: hidden;
+        }
+
+        .eco-points::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        .eco-points-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .eco-points h3 {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .eco-points .points {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .level-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .level-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 0.5rem;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: white;
+            border-radius: 4px;
+            width: 75%;
+            transition: width 0.3s ease;
+        }
+
+        .progress-text {
+            font-size: 0.875rem;
+            opacity: 0.8;
+        }
+
+        /* Achievements Card */
+        .achievements h3 {
+            color: #2f7d32;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .achievement-badge {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: #f8fdf8;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            border-left: 4px solid #4caf50;
+        }
+
+        .achievement-icon {
+            width: 40px;
+            height: 40px;
+            background: #4caf50;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .achievement-info h4 {
+            color: #2d3748;
+            margin-bottom: 0.25rem;
+        }
+
+        .achievement-info p {
+            color: #718096;
+            font-size: 0.875rem;
+        }
+
+        .locked-badge {
+            opacity: 0.5;
+            background: #f7fafc;
+            border-left-color: #cbd5e0;
+        }
+
+        .locked-badge .achievement-icon {
+            background: #cbd5e0;
+        }
+
+        /* Saved Recipes Card */
+        .saved-recipes-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .saved-recipes h3 {
+            color: #2d3748;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .create-btn {
+            background: #ff6b35;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .create-btn:hover {
+            background: #e55a2b;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+        }
+
+        .recipe-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: #fafafa;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .recipe-item:hover {
+            background: #f0f9f0;
+            transform: translateX(5px);
+        }
+
+        .recipe-image {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #4caf50, #2e7d32);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .recipe-info h4 {
+            color: #2d3748;
+            margin-bottom: 0.25rem;
+        }
+
+        .recipe-info p {
+            color: #718096;
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .recipe-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.75rem;
+            color: #a0aec0;
+        }
+
+        .difficulty-badge {
+            background: #e8f5e8;
+            color: #2f7d32;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        /* Tip Section */
+        .tip-section {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-left: 6px solid #ff6b35;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tip-section::before {
+            content: '💡';
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 2rem;
+            opacity: 0.7;
+        }
+
+        .tip-section h3 {
+            color: #d68910;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .tip-section p {
+            color: #7d6608;
+            font-weight: 500;
+        }
+
+        .tip-section small {
+            color: #b7950b;
+            font-size: 0.875rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .welcome-section h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+
+        /* Icons */
+        .icon {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .card:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">ReciP</div>
+        <nav class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="about.html#contact">Contact</a>
+            <a href="dashboard.html">Profile</a>
+        </nav>
+        <div class="hamburger">☰</div>
+    </header>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="welcome-section">
+                <h1>Hello, Sandra! </h1>
+                <p>Ready to turn some leftovers into delicious meals?</p>
+            </div>
+            <button class="profile-btn">
+                <a href="auth.html">Logout</a>
+            </button>
+        </div>
+
+        <!-- Dashboard Grid -->
+        <div class="dashboard-grid">
+            <!-- Eco Points Card -->
+            <div class="card eco-points">
+                <div class="eco-points-header">
+                    <span>🌿</span>
+                    <h3>Total Eco Points</h3>
+                    <span style="margin-left: auto;">📈</span>
+                </div>
+                <div class="points">750</div>
+                <div class="level-info">
+                    <span>Progress to Level 4</span>
+                    <div class="level-badge">Level 3 🍃</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="progress-text">750/1000</div>
+            </div>
+
+            <!-- Achievements Card -->
+            <div class="card achievements">
+                <h3>🏆 Your Achievements <span style="margin-left: auto; color: #4caf50;">3/6</span></h3>
+
+                <div class="achievement-badge">
+                    <div class="achievement-icon">🍳</div>
+                    <div class="achievement-info">
+                        <h4>First Recipe</h4>
+                        <p>Created your first leftover recipe</p>
+                    </div>
+                </div>
+
+                <div class="achievement-badge">
+                    <div class="achievement-icon">♻</div>
+                    <div class="achievement-info">
+                        <h4>Eco Warrior</h4>
+                        <p>Saved 100 meals from waste</p>
+                    </div>
+                </div>
+
+                <div class="achievement-badge">
+                    <div class="achievement-icon">⭐</div>
+                    <div class="achievement-info">
+                        <h4>Recipe Master</h4>
+                        <p>Created 25 recipes</p>
+                    </div>
+                </div>
+
+                <div class="achievement-badge locked-badge">
+                    <div class="achievement-icon">🏆</div>
+                    <div class="achievement-info">
+                        <h4>Sustainability Champion</h4>
+                        <p>Reach 1000 eco points</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Saved Recipes Card -->
+            <div class="card saved-recipes">
+                <div class="saved-recipes-header">
+                    <h3>📖 Your Saved Recipes</h3>
+                </div>
+
+                <div class="recipe-item" onclick="selectRecipe('stir-fry')">
+                    <div class="recipe-image">🥬</div>
+                    <div class="recipe-info">
+                        <h4>Leftover Veggie Stir-Fry</h4>
+                        <p>Transform your leftover vegetables into a delicious and healthy stir-fry</p>
+                        <div class="recipe-meta">
+                            <span>⏱ 15 min</span>
+                            <span>💾 Saved 1/15/2024</span>
+                            <div class="difficulty-badge">Easy</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-item" onclick="selectRecipe('banana-bread')">
+                    <div class="recipe-image">🍌</div>
+                    <div class="recipe-info">
+                        <h4>Banana Bread Surprise</h4>
+                        <p>Turn overripe bananas into a moist and flavourful bread</p>
+                        <div class="recipe-meta">
+                            <span>⏱ 60 min</span>
+                            <span>💾 Saved 1/12/2024</span>
+                            <div class="difficulty-badge" style="background: #fff3cd; color: #d68910;">Medium</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-item" onclick="selectRecipe('veggie-stock')">
+                    <div class="recipe-image">🥄</div>
+                    <div class="recipe-info">
+                        <h4>Vegetable Stock Magic</h4>
+                        <p>Create rich stock from vegetable scraps and peels</p>
+                        <div class="recipe-meta">
+                            <span>⏱ 120 min</span>
+                            <span>💾 Saved 1/10/2024</span>
+                            <div class="difficulty-badge">Easy</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tip Section -->
+        <div class="tip-section">
+            <h3>🔥 Sustainable Tip of the Day</h3>
+            <p>Turn vegetable scraps into flavorful stock for soups.</p>
+            <br>
+            <small>⚡ Small actions, big impact!</small>
+        </div>
+    </div>
+    <div class="floating-bg">
+        <span>🥬</span>
+        <span>🍅</span>
+        <span>🥕</span>
+        <span>🍏</span>
+        <span>🍋</span>
+        <span>🍇</span>
+        <span>🍌</span>
+        <span>🌽</span>
+        <span>🍒</span>
+        <span>🍉</span>
+        <span>🥒</span>
+        <span>🍄</span>
+    </div>
+
+    <script>
+        // Sample data from the provided JSON
+        const recipeData = {
+            "1": {
+                title: "Mediterranean Garden Salad",
+                time: "15 mins",
+                difficulty: "Easy",
+                desc: "Fresh and vibrant salad with tomatoes, cucumbers, lettuce, and paneer dressed in olive oil and herbs.",
+                ingredients: ["Tomato", "Cucumber", "Lettuce", "Paneer", "Olive Oil", "Oregano", "Salt", "Black Pepper"]
+            },
+            "3": {
+                title: "Masala Omelette",
+                time: "12 mins",
+                difficulty: "Easy",
+                desc: "Spicy omelette with onion, tomato, capsicum, and a hint of coriander.",
+                ingredients: ["Egg", "Onion", "Tomato", "Capsicum", "Salt", "Black Pepper", "Coriander", "Olive Oil"]
+            },
+            "4": {
+                title: "Vegetable Pulao",
+                time: "30 mins",
+                difficulty: "Medium",
+                desc: "Aromatic rice cooked with peas, carrots, corn, and spices.",
+                ingredients: ["Rice", "Peas", "Carrot", "Corn", "Onion", "Garlic", "Ginger", "Turmeric", "Salt", "Olive Oil"]
+            }
+        };
+
+        // Interactive functions
+        function selectRecipe(recipeType) {
+            // Add visual feedback
+            event.currentTarget.style.background = '#e8f5e8';
+
+            setTimeout(() => {
+                if (recipeType === 'stir-fry') {
+                    alert('🥬 Leftover Veggie Stir-Fry selected!\n\nPerfect for using up those leftover vegetables. This quick and healthy recipe will be ready in just 15 minutes!');
+                } else if (recipeType === 'banana-bread') {
+                    alert('🍌 Banana Bread Surprise selected!\n\nGreat for overripe bananas! This medium-difficulty recipe takes about 60 minutes but results in delicious, moist bread.');
+                } else if (recipeType === 'veggie-stock') {
+                    alert('🥄 Vegetable Stock Magic selected!\n\nTransform your vegetable scraps into liquid gold! This easy recipe takes 2 hours of simmering but provides rich stock for multiple meals.');
+                }
+                event.currentTarget.style.background = '#fafafa';
+            }, 200);
+        }
+
+        // Animate progress bar on load
+        window.addEventListener('load', function () {
+            setTimeout(() => {
+                const progressBar = document.querySelector('.progress-fill');
+                progressBar.style.width = '75%';
+            }, 1000);
+        });
+
+        // Add click animation to eco points card
+        document.querySelector('.eco-points').addEventListener('click', function () {
+            this.style.transform = 'scale(0.98)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1)';
+            }, 150);
+        });
+
+
+        // Add some dynamic behavior to achievement badges
+        document.querySelectorAll('.achievement-badge:not(.locked-badge)').forEach(badge => {
+            badge.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateX(10px)';
+                this.style.borderLeftColor = '#ff6b35';
+            });
+
+            badge.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateX(0)';
+                this.style.borderLeftColor = '#4caf50';
+            });
+        });
+
+        // Tip section interaction
+        document.querySelector('.tip-section').addEventListener('click', function () {
+            const tips = [
+                "Turn vegetable scraps into flavorful stock for soups.",
+                "Freeze overripe bananas to make smoothies later.",
+                "Use potato peels to make crispy, healthy chips.",
+                "Transform stale bread into delicious croutons.",
+                "Create herb oil from wilting fresh herbs."
+            ];
+
+            const randomTip = tips[Math.floor(Math.random() * tips.length)];
+            document.querySelector('.tip-section p').textContent = randomTip;
+
+            // Add a little animation
+            this.style.transform = 'scale(1.02)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1)';
+            }, 200);
+        });
+    </script>
+</body>
+
+</html>
