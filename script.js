@@ -379,27 +379,42 @@ function renderRecipes(recipes) {
 
   cardsContainer.innerHTML = "";
 
-  // Use smart ingredient matching
+  // Filter recipes based on matching ingredients with smart logic
   const filtered = recipes.filter(recipe => {
     if (!recipe.ingredients) return false;
     
-    return recipe.ingredients.some(recipeIngredient => 
+    // Count how many recipe ingredients match user ingredients
+    const matchingIngredients = recipe.ingredients.filter(recipeIngredient => 
       userIngredients.some(userIngredient => 
         ingredientMatcher.matchesRecipeIngredient(userIngredient, recipeIngredient)
       )
     );
+
+    const matchCount = matchingIngredients.length;
+    const userIngredientCount = userIngredients.length;
+
+    // Apply filtering logic based on user input count
+    if (userIngredientCount <= 3) {
+      // If user has 3 or fewer ingredients, show all recipes with at least 1 match
+      return matchCount >= 1;
+    } else {
+      // If user has more than 3 ingredients, show recipes with 3 or more matches
+      return matchCount >= 3;
+    }
   });
 
   if (filtered.length === 0) {
+    const minRequired = userIngredients.length > 3 ? 3 : 1;
     cardsContainer.innerHTML = `
       <div style="text-align: center; padding: 40px;">
         <p style="font-size:28px;font-weight:bold;color:#ff9019;margin-bottom:20px;">No recipes found for your ingredients!</p>
+        <p style="font-size:16px;color:#666;">You have ${userIngredients.length} ingredients. We need recipes with at least ${minRequired} matching ingredients.</p>
         <p style="font-size:16px;color:#666;">Try adding more common ingredients like rice, chicken, or vegetables.</p>
       </div>`;
     return;
   }
 
-  // Sort by relevance (number of matching ingredients)
+  // Sort by relevance (number of matching ingredients) - highest matches first
   const sortedFiltered = filtered.sort((a, b) => {
     const aMatches = a.ingredients.filter(recipeIng => 
       userIngredients.some(userIng => 
@@ -416,11 +431,53 @@ function renderRecipes(recipes) {
     return bMatches - aMatches; // Sort by most matches first
   });
 
+  // Add a modern summary card showing filtering criteria
+  const summaryDiv = document.createElement("div");
+  summaryDiv.style.cssText = `
+    background-color: white;
+    color: #376736;
+    padding: 28px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+  `;
+  
+  // Add decorative background pattern
+  summaryDiv.innerHTML = `
+    <div style="position: absolute; top: -20px; right: -20px; width: 80px; height: 80px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; opacity: 0.5;"></div>
+    <div style="position: absolute; bottom: -30px; left: -30px; width: 100px; height: 100px; background: rgba(255, 255, 255, 0.05); border-radius: 50%;"></div>
+    <div style="position: relative; z-index: 1;">
+      <div style="display: flex; align-items: center; margin-top: 40px; justify-content: center; gap: 12px; flex-wrap: wrap;">
+        <div style="background: rgba(228, 255, 212, 1); padding: 8px 16px; border-radius: 20px; backdrop-filter: blur(10px);">
+          <span style="font-size: 14px; font-weight: 600;">🍳 ${filtered.length} Recipes Found</span>
+        </div>
+        <div style="background: rgba(228, 255, 212, 1); padding: 8px 16px; border-radius: 20px; backdrop-filter: blur(10px);">
+          <span style="font-size: 14px; font-weight: 600;">🥘 ${userIngredients.length} Ingredients Inputted</span>
+        </div>
+        <div style="background: rgba(228, 255, 212, 1); padding: 8px 16px; border-radius: 20px; backdrop-filter: blur(10px);">
+          <span style="font-size: 14px; font-weight: 600;">✅ ${userIngredients.length > 3 ? '3+' : '1+'} Minimum Matches Being Displayed</span>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 40px;">
+        <p style="margin: 0; font-size: 15px; opacity: 0.9; font-weight: 500;">
+          ${userIngredients.length > 3 
+            ? 'Showing recipes with 3 or more matching ingredients for optimal cooking' 
+            : 'Showing all possible recipes you can make with your ingredients'
+          }
+        </p>
+      </div>
+    </div>
+  `;
+  
+  cardsContainer.appendChild(summaryDiv);
+
   sortedFiltered.forEach(recipe => {
     const card = document.createElement("div");
     card.classList.add("card");
 
-    // Calculate match percentage for display
+    // Calculate match count and percentage for display
     const matchingIngredients = recipe.ingredients.filter(recipeIng => 
       userIngredients.some(userIng => 
         ingredientMatcher.matchesRecipeIngredient(userIng, recipeIng)
@@ -434,7 +491,7 @@ function renderRecipes(recipes) {
         <img class="recipe-image" src="../assets/${recipe.image}" alt="${recipe.title}">
         <span class="badge">${recipe.difficulty || 'Medium'}</span>
         <span class="match-badge" style="position: absolute; top: 10px; left: 10px; background: #16a34a; color: white; padding: 4px 8px; border-radius: 12px; font-size: 12px; font-weight: bold;">
-          ${matchPercentage}% match
+          ${matchingIngredients}/${recipe.ingredients.length} (${matchPercentage}%)
         </span>
       </div>
       <div class="card-body">
