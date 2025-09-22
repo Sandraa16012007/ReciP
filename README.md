@@ -1,1 +1,1 @@
-Hello
+ReciP is an AI-powered recipe assistant that reduces food waste by detecting ingredients from leftover meals, groceries, or fridge images. Using Hugging Face computer vision models, it identifies multiple ingredients, auto-fills them into the recipe search, and suggests sustainable meal ideas. With a simple HTML, CSS, and JavaScript frontend, a Firebase backend, and AI deployed on Hugging Face Spaces, ReciP makes cooking smarter, eco-friendly, and fun — turning everyday ingredients into delicious, waste-free recipes.
