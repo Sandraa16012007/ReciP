@@ -710,13 +710,13 @@
     "tip": "Save banana peels for composting and use apple cores for making natural pectin."
   },
   {
-    "id": "11",
+    "id": "21",
     "title": "Spinach Cheese Paratha",
     "time": "35 mins",
     "servings": "4 servings",
     "difficulty": "Medium",
     "desc": "Nutritious flatbread stuffed with spinach and cheese, served with tangy yogurt.",
-    "image": "Spinach-Cheese-Paratha.jpg",
+    "image": "Spinach-Cheese-Paratha.jpeg",
     "badge": "Nutritious",
     "tags": ["Spinach", "Cheese", "Bread", "Yogurt"],
     "ingredients": ["Spinach", "Cheese", "Bread", "Yogurt", "Onion", "Garlic", "Ginger", "Turmeric", "Salt", "Olive Oil"],
@@ -747,13 +747,13 @@
     "tip": "Use spinach stems for making green stock and save cheese water for kneading dough."
   },
   {
-    "id": "12",
+    "id": "22",
     "title": "Mushroom Egg Curry",
     "time": "25 mins",
     "servings": "4 servings",
     "difficulty": "Easy",
     "desc": "Rich curry with boiled eggs and mushrooms in spiced tomato gravy.",
-    "image": "Mushroom-Egg-Curry.jpg",
+    "image": "Mushroom-Egg-Curry.jpeg",
     "badge": "Protein Rich",
     "tags": ["Mushroom", "Egg", "Tomato", "Ginger"],
     "ingredients": ["Mushroom", "Egg", "Tomato", "Ginger", "Garlic", "Onion", "Turmeric", "Red chili powder", "Salt", "Olive Oil"],
@@ -784,7 +784,7 @@
     "tip": "Save eggshells for calcium-rich compost and use mushroom stems for vegetable stock."
   },
   {
-    "id": "13",
+    "id": "23",
     "title": "Potato Cabbage Stir Fry",
     "time": "20 mins",
     "servings": "3 servings",
@@ -821,7 +821,7 @@
     "tip": "Save cabbage core for making sauerkraut and use potato peels for crispy snacks."
   },
   {
-    "id": "14",
+    "id": "24",
     "title": "Orange Yogurt Lassi",
     "time": "8 mins",
     "servings": "2 servings",
@@ -856,13 +856,13 @@
     "tip": "Save orange peels for making natural air freshener and use pulp for marmalade."
   },
   {
-    "id": "15",
+    "id": "25",
     "title": "Chicken Lettuce Wraps",
     "time": "22 mins",
     "servings": "4 servings",
     "difficulty": "Medium",
     "desc": "Healthy wraps with spiced minced chicken and fresh vegetables in lettuce cups.",
-    "image": "Chicken-Lettuce-Wraps.jpg",
+    "image": "Chicken-Lettuce-Wraps.jpeg",
     "badge": "Healthy",
     "tags": ["Chicken", "Lettuce", "Cucumber", "Vinegar"],
     "ingredients": ["Chicken", "Lettuce", "Cucumber", "Vinegar", "Onion", "Garlic", "Ginger", "Red chili powder", "Salt", "Olive Oil"],
@@ -893,13 +893,13 @@
     "tip": "Save lettuce stems for making green smoothies and use chicken fat for cooking other dishes."
   },
   {
-    "id": "16",
+    "id": "26",
     "title": "Ham Cheese Sandwich",
     "time": "10 mins",
     "servings": "2 servings",
     "difficulty": "Easy",
     "desc": "Classic grilled sandwich with ham, cheese and vegetables with tangy mayonnaise.",
-    "image": "Ham-Cheese-Sandwich.jpg",
+    "image": "Ham-Cheese-Sandwich.jpeg",
     "badge": "Quick",
     "tags": ["Ham", "Cheese", "Bread", "Mayonnaise"],
     "ingredients": ["Ham", "Cheese", "Bread", "Mayonnaise", "Tomato", "Lettuce", "Cucumber", "Mustard", "Butter", "Black pepper"],
@@ -930,7 +930,7 @@
     "tip": "Save bread crusts for making croutons and use vegetable peels for composting."
   },
   {
-    "id": "17",
+    "id": "27",
     "title": "Spiced Apple Chutney",
     "time": "18 mins",
     "servings": "6 servings",
@@ -967,7 +967,7 @@
     "tip": "Save apple peels and cores for making natural pectin and use for jam-making."
   },
   {
-    "id": "18",
+    "id": "28",
     "title": "Corn Cheese Cutlets",
     "time": "30 mins",
     "servings": "4 servings",
@@ -1004,7 +1004,7 @@
     "tip": "Save potato peels for making crispy chips and reuse frying oil after straining."
   },
   {
-    "id": "19",
+    "id": "29",
     "title": "Fish Tikka Masala",
     "time": "40 mins",
     "servings": "4 servings",
@@ -1041,7 +1041,7 @@
     "tip": "Save fish bones for making nutritious broth and use tomato peels for composting."
   },
   {
-    "id": "20",
+    "id": "30",
     "title": "Bean Sprout Salad",
     "time": "12 mins",
     "servings": "3 servings",
