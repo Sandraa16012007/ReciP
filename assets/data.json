@@ -377,6 +377,705 @@
       "carbonSaved": "Reduced 0.45 kg CO₂ emissions vs takeout meal"
     },
     "tip": "Use leftover vegetables from fridge to reduce food waste."
+  },
+  {
+    "id": "12",
+    "title": "Masala Scrambled Eggs",
+    "time": "15 mins",
+    "servings": "2 servings",
+    "difficulty": "Easy",
+    "desc": "Spiced scrambled eggs with onions and tomatoes - perfect for breakfast or dinner.",
+    "image": "Masala-Scrambled-Eggs.jpg",
+    "badge": "Quick",
+    "tags": ["Egg", "Tomato", "Onion", "Turmeric"],
+    "ingredients": ["Egg", "Tomato", "Onion", "Garlic", "Ginger", "Turmeric", "Red chili powder", "Salt", "Olive Oil", "Coriander"],
+    "ingredientsWithQuantity": [
+      {"name": "Egg", "quantity": "4", "unit": "pieces"},
+      {"name": "Tomato", "quantity": "1 medium", "unit": "piece"},
+      {"name": "Onion", "quantity": "1 small", "unit": "piece"},
+      {"name": "Garlic", "quantity": "2 cloves", "unit": "cloves"},
+      {"name": "Ginger", "quantity": "1/2 inch", "unit": "piece"},
+      {"name": "Turmeric", "quantity": "1/4 tsp", "unit": "teaspoon"},
+      {"name": "Red chili powder", "quantity": "1/4 tsp", "unit": "teaspoon"},
+      {"name": "Salt", "quantity": "1/2 tsp", "unit": "teaspoon"},
+      {"name": "Olive Oil", "quantity": "1 tbsp", "unit": "tablespoon"},
+      {"name": "Coriander", "quantity": "2 tbsp", "unit": "tablespoons"}
+    ],
+    "steps": [
+      "Beat eggs with salt and turmeric in a bowl.",
+      "Heat oil in pan, sauté minced garlic and ginger.",
+      "Add diced onion, cook until translucent.",
+      "Add chopped tomato, cook until soft.",
+      "Pour beaten eggs, scramble gently on low heat.",
+      "Garnish with fresh coriander and serve hot."
+    ],
+    "ecoImpact": {
+      "foodWasteSaved": "Used leftover vegetables and day-old eggs",
+      "carbonSaved": "Reduced 0.3 kg CO₂ vs ordering restaurant breakfast"
+    },
+    "tip": "Use slightly older eggs for better scrambling texture and to reduce food waste."
+  },
+  {
+    "id": "13",
+    "title": "Aloo Paratha",
+    "time": "45 mins",
+    "servings": "4 servings",
+    "difficulty": "Medium",
+    "desc": "Traditional stuffed flatbread with spiced potato filling, served with yogurt.",
+    "image": "Aloo-Paratha.jpg",
+    "badge": "Traditional",
+    "tags": ["Bread", "Potato", "Yogurt", "Ginger"],
+    "ingredients": ["Bread", "Potato", "Yogurt", "Ginger", "Garlic", "Onion", "Turmeric", "Red chili powder", "Salt", "Olive Oil"],
+    "ingredientsWithQuantity": [
+      {"name": "Bread", "quantity": "2 cups", "unit": "cups"},
+      {"name": "Potato", "quantity": "3 medium", "unit": "pieces"},
+      {"name": "Yogurt", "quantity": "1/2 cup", "unit": "cup"},
+      {"name": "Ginger", "quantity": "1 inch", "unit": "piece"},
+      {"name": "Garlic", "quantity": "2 cloves", "unit": "cloves"},
+      {"name": "Onion", "quantity": "1 small", "unit": "piece"},
+      {"name": "Turmeric", "quantity": "1/2 tsp", "unit": "teaspoon"},
+      {"name": "Red chili powder", "quantity": "1/2 tsp", "unit": "teaspoon"},
+      {"name": "Salt", "quantity": "1 tsp", "unit": "teaspoon"},
+      {"name": "Olive Oil", "quantity": "3 tbsp", "unit": "tablespoons"}
+    ],
+    "steps": [
+      "Boil and mash potatoes with spices, ginger-garlic paste.",
+      "Mix finely chopped onion into potato filling.",
+      "Make dough using bread flour and water.",
+      "Roll dough, stuff with potato mixture, seal edges.",
+      "Cook paratha on hot tawa with oil until golden.",
+      "Serve hot with fresh yogurt and pickle."
+    ],
+    "ecoImpact": {
+      "foodWasteSaved": "Used leftover boiled potatoes and stale bread flour",
+      "carbonSaved": "Reduced 0.5 kg CO₂ vs buying frozen parathas"
+    },
+    "tip": "Make extra filling and freeze for quick parathas throughout the week."
+  },
+  {
+    "id": "14",
+    "title": "Chicken Biryani",
+    "time": "60 mins",
+    "servings": "6 servings",
+    "difficulty": "Hard",
+    "desc": "Aromatic layered rice dish with marinated chicken and fragrant spices.",
+    "image": "Chicken-Biryani.jpg",
+    "badge": "Festive",
+    "tags": ["Chicken", "Rice", "Yogurt", "Ginger"],
+    "ingredients": ["Chicken", "Rice", "Yogurt", "Ginger", "Garlic", "Onion", "Turmeric", "Red chili powder", "Salt", "Olive Oil"],
+    "ingredientsWithQuantity": [
+      {"name": "Chicken", "quantity": "500g", "unit": "grams"},
+      {"name": "Rice", "quantity": "2 cups", "unit": "cups"},
+      {"name": "Yogurt", "quantity": "1/2 cup", "unit": "cup"},
+      {"name": "Ginger", "quantity": "2 inches", "unit": "piece"},
+      {"name": "Garlic", "quantity": "6 cloves", "unit": "cloves"},
+      {"name": "Onion", "quantity": "3 large", "unit": "pieces"},
+      {"name": "Turmeric", "quantity": "1 tsp", "unit": "teaspoon"},
+      {"name": "Red chili powder", "quantity": "1 tsp", "unit": "teaspoon"},
+      {"name": "Salt", "quantity": "2 tsp", "unit": "teaspoon"},
+      {"name": "Olive Oil", "quantity": "4 tbsp", "unit": "tablespoons"}
+    ],
+    "steps": [
+      "Marinate chicken with yogurt, ginger-garlic paste and spices.",
+      "Deep fry sliced onions until golden, drain on paper.",
+      "Cook marinated chicken until 80% done.",
+      "Boil rice with whole spices until 70% cooked.",
+      "Layer rice and chicken alternately, top with fried onions.",
+      "Cook on high heat for 2 mins, then dum for 30 mins."
+    ],
+    "ecoImpact": {
+      "foodWasteSaved": "Used chicken parts that might otherwise be discarded",
+      "carbonSaved": "Reduced 1.2 kg CO₂ vs ordering restaurant biryani"
+    },
+    "tip": "Save fried onion oil for cooking other dishes and use chicken bones for stock."
+  },
+  {
+    "id": "15",
+    "title": "Mixed Vegetable Curry",
+    "time": "25 mins",
+    "servings": "4 servings",
+    "difficulty": "Easy",
+    "desc": "Hearty curry with cauliflower, peas, carrot and potatoes in spiced gravy.",
+    "image": "Mixed-Vegetable-Curry.jpg",
+    "badge": "Healthy",
+    "tags": ["Cauliflower", "Peas", "Carrot", "Potato"],
+    "ingredients": ["Cauliflower", "Peas", "Carrot", "Potato", "Tomato", "Onion", "Ginger", "Turmeric", "Salt", "Olive Oil"],
+    "ingredientsWithQuantity": [
+      {"name": "Cauliflower", "quantity": "1 small head", "unit": "piece"},
+      {"name": "Peas", "quantity": "1/2 cup", "unit": "cup"},
+      {"name": "Carrot", "quantity": "2 medium", "unit": "pieces"},
+      {"name": "Potato", "quantity": "2 medium", "unit": "pieces"},
+      {"name": "Tomato", "quantity": "2 medium", "unit": "pieces"},
+      {"name": "Onion", "quantity": "1 large", "unit": "piece"},
+      {"name": "Ginger", "quantity": "1 inch", "unit": "piece"},
+      {"name": "Turmeric", "quantity": "1/2 tsp", "unit": "teaspoon"},
+      {"name": "Salt", "quantity": "1 tsp", "unit": "teaspoon"},
+      {"name": "Olive Oil", "quantity": "2 tbsp", "unit": "tablespoons"}
+    ],
+    "steps": [
+      "Cut all vegetables into similar sized pieces.",
+      "Heat oil, sauté onions until translucent.",
+      "Add ginger paste and chopped tomatoes.",
+      "Add harder vegetables first (potato, carrot), then cauliflower.",
+      "Add peas last with turmeric, salt and water.",
+      "Cover and cook until vegetables are tender."
+    ],
+    "ecoImpact": {
+      "foodWasteSaved": "Used vegetable scraps and slightly wilted vegetables",
+      "carbonSaved": "Reduced 0.4 kg CO₂ vs buying pre-cut frozen vegetables"
+    },
+    "tip": "Save vegetable peels for compost and use the nutrient-rich cooking water for plants."
+  },
+  {
+    "id": "16",
+    "title": "Masala Bread Toast",
+    "time": "12 mins",
+    "servings": "2 servings",
+    "difficulty": "Easy",
+    "desc": "Crispy buttered toast topped with spiced vegetables and cheese.",
+    "image": "Masala-Bread-Toast.jpg",
+    "badge": "Quick",
+    "tags": ["Bread", "Butter", "Cheese", "Capsicum"],
+    "ingredients": ["Bread", "Butter", "Cheese", "Capsicum", "Tomato", "Onion", "Black pepper", "Salt", "Oregano", "Ketchup"],
+    "ingredientsWithQuantity": [
+      {"name": "Bread", "quantity": "4 slices", "unit": "slices"},
+      {"name": "Butter", "quantity": "2 tbsp", "unit": "tablespoons"},
+      {"name": "Cheese", "quantity": "1/2 cup", "unit": "cup"},
+      {"name": "Capsicum", "quantity": "1 medium", "unit": "piece"},
+      {"name": "Tomato", "quantity": "1 medium", "unit": "piece"},
+      {"name": "Onion", "quantity": "1 small", "unit": "piece"},
+      {"name": "Black pepper", "quantity": "1/4 tsp", "unit": "teaspoon"},
+      {"name": "Salt", "quantity": "1/4 tsp", "unit": "teaspoon"},
+      {"name": "Oregano", "quantity": "1/2 tsp", "unit": "teaspoon"},
+      {"name": "Ketchup", "quantity": "2 tbsp", "unit": "tablespoons"}
+    ],
+    "steps": [
+      "Toast bread slices until lightly golden.",
+      "Butter the toast while warm.",
+      "Mix diced capsicum, tomato, onion with salt and pepper.",
+      "Spread ketchup on buttered toast.",
+      "Top with vegetable mixture and grated cheese.",
+      "Grill for 3-4 minutes until cheese melts."
+    ],
+    "ecoImpact": {
+      "foodWasteSaved": "Used day-old bread and vegetable scraps",
+      "carbonSaved": "Reduced 0.2 kg CO₂ vs buying packaged sandwiches"
+    },
+    "tip": "Use bread that's slightly stale for better texture and save cheese rinds for soups."
+  },
+  {
+    "id": "17",
+    "title": "Fish Curry",
+    "time": "30 mins",
+    "servings": "4 servings",
+    "difficulty": "Medium",
+    "desc": "Tangy coconut-based fish curry with tomatoes and aromatic spices.",
+    "image": "Fish-Curry.jpg",
+    "badge": "Coastal",
+    "tags": ["Fish", "Tomato", "Ginger", "Turmeric"],
+    "ingredients": ["Fish", "Tomato", "Ginger", "Turmeric", "Garlic", "Onion", "Red chili powder", "Salt", "Olive Oil", "Lemon"],
+    "ingredientsWithQuantity": [
+      {"name": "Fish", "quantity": "500g", "unit": "grams"},
+      {"name": "Tomato", "quantity": "3 medium", "unit": "pieces"},
+      {"name": "Ginger", "quantity": "2 inches", "unit": "piece"},
+      {"name": "Turmeric", "quantity": "1 tsp", "unit": "teaspoon"},
+      {"name": "Garlic", "quantity": "4 cloves", "unit": "cloves"},
+      {"name": "Onion", "quantity": "2 medium", "unit": "pieces"},
+      {"name": "Red chili powder", "quantity": "1 tsp", "unit": "teaspoon"},
+      {"name": "Salt", "quantity": "1 tsp", "unit": "teaspoon"},
+      {"name": "Olive Oil", "quantity": "3 tbsp", "unit": "tablespoons"},
+      {"name": "Lemon", "quantity": "1", "unit": "piece"}
+    ],
+    "steps": [
+      "Marinate fish pieces with turmeric, salt and lemon juice.",
+      "Heat oil, fry fish lightly and set aside.",
+      "Sauté sliced onions until golden brown.",
+      "Add ginger-garlic paste, cook for 2 minutes.",
+      "Add chopped tomatoes and spices, cook until soft.",
+      "Gently add fried fish, simmer for 8-10 minutes."
+    ],
+    "ecoImpact": {
+      "foodWasteSaved": "Used fish offcuts and overripe tomatoes",
+      "carbonSaved": "Reduced 0.8 kg CO₂ vs buying packaged fish curry"
+    },
+    "tip": "Save fish bones for making nutritious stock and use tomato seeds for growing plants."
+  },
+  {
+    "id": "18",
+    "title": "Pasta in White Sauce",
+    "time": "20 mins",
+    "servings": "3 servings",
+    "difficulty": "Easy",
+    "desc": "Creamy pasta with vegetables in a rich milk-based white sauce.",
+    "image": "Pasta-White-Sauce.jpg",
+    "badge": "Creamy",
+    "tags": ["Pasta", "Milk", "Butter", "Mushroom"],
+    "ingredients": ["Pasta", "Milk", "Butter", "Mushroom", "Capsicum", "Garlic", "Black pepper", "Salt", "Oregano", "Cheese"],
+    "ingredientsWithQuantity": [
+      {"name": "Pasta", "quantity": "200g", "unit": "grams"},
+      {"name": "Milk", "quantity": "1 cup", "unit": "cup"},
+      {"name": "Butter", "quantity": "3 tbsp", "unit": "tablespoons"},
+      {"name": "Mushroom", "quantity": "100g", "unit": "grams"},
+      {"name": "Capsicum", "quantity": "1 small", "unit": "piece"},
+      {"name": "Garlic", "quantity": "3 cloves", "unit": "cloves"},
+      {"name": "Black pepper", "quantity": "1/2 tsp", "unit": "teaspoon"},
+      {"name": "Salt", "quantity": "1 tsp", "unit": "teaspoon"},
+      {"name": "Oregano", "quantity": "1 tsp", "unit": "teaspoon"},
+      {"name": "Cheese", "quantity": "1/4 cup", "unit": "cup"}
+    ],
+    "steps": [
+      "Boil pasta with salt until al dente, drain and reserve water.",
+      "Heat butter, sauté minced garlic until fragrant.",
+      "Add sliced mushrooms and capsicum, cook until tender.",
+      "Pour milk gradually, whisk to avoid lumps.",
+      "Add cooked pasta, season with salt, pepper and oregano.",
+      "Top with grated cheese and serve immediately."
+    ],
+    "ecoImpact": {
+      "foodWasteSaved": "Used slightly wilted vegetables and pasta water for plants",
+      "carbonSaved": "Reduced 0.5 kg CO₂ vs ordering restaurant pasta"
+    },
+    "tip": "Save starchy pasta water for making bread and use vegetable trimmings for stock."
+  },
+  {
+    "id": "19",
+    "title": "Stuffed Capsicum",
+    "time": "40 mins",
+    "servings": "4 servings",
+    "difficulty": "Medium",
+    "desc": "Bell peppers stuffed with spiced rice, beans and vegetables.",
+    "image": "Stuffed-Capsicum.jpg",
+    "badge": "Nutritious",
+    "tags": ["Capsicum", "Rice", "Beans", "Corn"],
+    "ingredients": ["Capsicum", "Rice", "Beans", "Corn", "Onion", "Tomato", "Garlic", "Turmeric", "Salt", "Olive Oil"],
+    "ingredientsWithQuantity": [
+      {"name": "Capsicum", "quantity": "4 large", "unit": "pieces"},
+      {"name": "Rice", "quantity": "1 cup", "unit": "cup"},
+      {"name": "Beans", "quantity": "1/2 cup", "unit": "cup"},
+      {"name": "Corn", "quantity": "1/2 cup", "unit": "cup"},
+      {"name": "Onion", "quantity": "1 medium", "unit": "piece"},
+      {"name": "Tomato", "quantity": "2 medium", "unit": "pieces"},
+      {"name": "Garlic", "quantity": "3 cloves", "unit": "cloves"},
+      {"name": "Turmeric", "quantity": "1/2 tsp", "unit": "teaspoon"},
+      {"name": "Salt", "quantity": "1 tsp", "unit": "teaspoon"},
+      {"name": "Olive Oil", "quantity": "2 tbsp", "unit": "tablespoons"}
+    ],
+    "steps": [
+      "Cut tops off capsicums, remove seeds and membranes.",
+      "Cook rice with beans until tender, let cool.",
+      "Sauté diced onions, garlic and tomatoes.",
+      "Mix cooked rice-beans with sautéed vegetables and corn.",
+      "Season stuffing with turmeric and salt.",
+      "Stuff capsicums, cover with foil and bake 30 minutes at 180°C."
+    ],
+    "ecoImpact": {
+      "foodWasteSaved": "Used leftover rice and slightly overripe capsicums",
+      "carbonSaved": "Reduced 0.4 kg CO₂ vs buying frozen stuffed peppers"
+    },
+    "tip": "Use capsicum tops and seeds for making vegetable stock and compost scraps."
+  },
+  {
+    "id": "20",
+    "title": "Banana Honey Smoothie",
+    "time": "5 mins",
+    "servings": "2 servings",
+    "difficulty": "Easy",
+    "desc": "Creamy smoothie with ripe bananas, milk and honey - perfect healthy drink.",
+    "image": "Banana-Honey-Smoothie.jpg",
+    "badge": "Healthy",
+    "tags": ["Banana", "Honey", "Milk", "Yogurt"],
+    "ingredients": ["Banana", "Honey", "Milk", "Yogurt", "Apple", "Lemon", "Salt", "Coriander"],
+    "ingredientsWithQuantity": [
+      {"name": "Banana", "quantity": "3 ripe", "unit": "pieces"},
+      {"name": "Honey", "quantity": "2 tbsp", "unit": "tablespoons"},
+      {"name": "Milk", "quantity": "1 cup", "unit": "cup"},
+      {"name": "Yogurt", "quantity": "1/2 cup", "unit": "cup"},
+      {"name": "Apple", "quantity": "1 small", "unit": "piece"},
+      {"name": "Lemon", "quantity": "1/2", "unit": "piece"},
+      {"name": "Salt", "quantity": "pinch", "unit": "pinch"},
+      {"name": "Coriander", "quantity": "1 tbsp", "unit": "tablespoon"}
+    ],
+    "steps": [
+      "Peel and chop overripe bananas and apple.",
+      "Add all fruits to blender with yogurt.",
+      "Pour cold milk and add honey.",
+      "Add a pinch of salt and lemon juice.",
+      "Blend until smooth and creamy.",
+      "Garnish with fresh coriander and serve chilled."
+    ],
+    "ecoImpact": {
+      "foodWasteSaved": "Used overripe bananas and bruised apple",
+      "carbonSaved": "Reduced 0.2 kg CO₂ vs buying packaged smoothies"
+    },
+    "tip": "Save banana peels for composting and use apple cores for making natural pectin."
+  },
+  {
+    "id": "11",
+    "title": "Spinach Cheese Paratha",
+    "time": "35 mins",
+    "servings": "4 servings",
+    "difficulty": "Medium",
+    "desc": "Nutritious flatbread stuffed with spinach and cheese, served with tangy yogurt.",
+    "image": "Spinach-Cheese-Paratha.jpg",
+    "badge": "Nutritious",
+    "tags": ["Spinach", "Cheese", "Bread", "Yogurt"],
+    "ingredients": ["Spinach", "Cheese", "Bread", "Yogurt", "Onion", "Garlic", "Ginger", "Turmeric", "Salt", "Olive Oil"],
+    "ingredientsWithQuantity": [
+      {"name": "Spinach", "quantity": "2 cups", "unit": "cups"},
+      {"name": "Cheese", "quantity": "1/2 cup", "unit": "cup"},
+      {"name": "Bread", "quantity": "2 cups", "unit": "cups"},
+      {"name": "Yogurt", "quantity": "3/4 cup", "unit": "cup"},
+      {"name": "Onion", "quantity": "1 small", "unit": "piece"},
+      {"name": "Garlic", "quantity": "2 cloves", "unit": "cloves"},
+      {"name": "Ginger", "quantity": "1/2 inch", "unit": "piece"},
+      {"name": "Turmeric", "quantity": "1/4 tsp", "unit": "teaspoon"},
+      {"name": "Salt", "quantity": "1 tsp", "unit": "teaspoon"},
+      {"name": "Olive Oil", "quantity": "3 tbsp", "unit": "tablespoons"}
+    ],
+    "steps": [
+      "Blanch spinach, drain and chop finely.",
+      "Sauté minced onion, garlic, ginger until fragrant.",
+      "Mix spinach with grated cheese, spices and salt.",
+      "Make soft dough with bread flour and water.",
+      "Roll dough, stuff with spinach-cheese mixture.",
+      "Cook on tawa with oil until golden and crispy."
+    ],
+    "ecoImpact": {
+      "foodWasteSaved": "Used wilted spinach leaves and cheese ends",
+      "carbonSaved": "Reduced 0.4 kg CO₂ vs buying frozen stuffed parathas"
+    },
+    "tip": "Use spinach stems for making green stock and save cheese water for kneading dough."
+  },
+  {
+    "id": "12",
+    "title": "Mushroom Egg Curry",
+    "time": "25 mins",
+    "servings": "4 servings",
+    "difficulty": "Easy",
+    "desc": "Rich curry with boiled eggs and mushrooms in spiced tomato gravy.",
+    "image": "Mushroom-Egg-Curry.jpg",
+    "badge": "Protein Rich",
+    "tags": ["Mushroom", "Egg", "Tomato", "Ginger"],
+    "ingredients": ["Mushroom", "Egg", "Tomato", "Ginger", "Garlic", "Onion", "Turmeric", "Red chili powder", "Salt", "Olive Oil"],
+    "ingredientsWithQuantity": [
+      {"name": "Mushroom", "quantity": "200g", "unit": "grams"},
+      {"name": "Egg", "quantity": "6", "unit": "pieces"},
+      {"name": "Tomato", "quantity": "3 medium", "unit": "pieces"},
+      {"name": "Ginger", "quantity": "1 inch", "unit": "piece"},
+      {"name": "Garlic", "quantity": "4 cloves", "unit": "cloves"},
+      {"name": "Onion", "quantity": "2 medium", "unit": "pieces"},
+      {"name": "Turmeric", "quantity": "1/2 tsp", "unit": "teaspoon"},
+      {"name": "Red chili powder", "quantity": "1 tsp", "unit": "teaspoon"},
+      {"name": "Salt", "quantity": "1 tsp", "unit": "teaspoon"},
+      {"name": "Olive Oil", "quantity": "3 tbsp", "unit": "tablespoons"}
+    ],
+    "steps": [
+      "Boil eggs, peel and make shallow cuts.",
+      "Slice mushrooms and sauté until golden.",
+      "Heat oil, fry eggs lightly and set aside.",
+      "Sauté onions, add ginger-garlic paste.",
+      "Add chopped tomatoes and spices, cook well.",
+      "Add mushrooms and eggs, simmer for 10 minutes."
+    ],
+    "ecoImpact": {
+      "foodWasteSaved": "Used older eggs and mushroom stems",
+      "carbonSaved": "Reduced 0.5 kg CO₂ vs ordering restaurant curry"
+    },
+    "tip": "Save eggshells for calcium-rich compost and use mushroom stems for vegetable stock."
+  },
+  {
+    "id": "13",
+    "title": "Potato Cabbage Stir Fry",
+    "time": "20 mins",
+    "servings": "3 servings",
+    "difficulty": "Easy",
+    "desc": "Simple dry sabzi with potatoes and cabbage seasoned with mustard seeds.",
+    "image": "Potato-Cabbage-Stir-Fry.jpg",
+    "badge": "Simple",
+    "tags": ["Potato", "Cabbage", "Mustard", "Turmeric"],
+    "ingredients": ["Potato", "Cabbage", "Mustard", "Turmeric", "Garlic", "Ginger", "Red chili powder", "Salt", "Olive Oil", "Lemon"],
+    "ingredientsWithQuantity": [
+      {"name": "Potato", "quantity": "3 medium", "unit": "pieces"},
+      {"name": "Cabbage", "quantity": "1/2 small head", "unit": "piece"},
+      {"name": "Mustard", "quantity": "1 tsp", "unit": "teaspoon"},
+      {"name": "Turmeric", "quantity": "1/2 tsp", "unit": "teaspoon"},
+      {"name": "Garlic", "quantity": "3 cloves", "unit": "cloves"},
+      {"name": "Ginger", "quantity": "1/2 inch", "unit": "piece"},
+      {"name": "Red chili powder", "quantity": "1/2 tsp", "unit": "teaspoon"},
+      {"name": "Salt", "quantity": "1 tsp", "unit": "teaspoon"},
+      {"name": "Olive Oil", "quantity": "2 tbsp", "unit": "tablespoons"},
+      {"name": "Lemon", "quantity": "1/2", "unit": "piece"}
+    ],
+    "steps": [
+      "Cut potatoes into small cubes, shred cabbage.",
+      "Heat oil, add mustard seeds until they splutter.",
+      "Add minced ginger-garlic, sauté briefly.",
+      "Add potato cubes with turmeric and salt.",
+      "Cover and cook until potatoes are 80% done.",
+      "Add cabbage and spices, cook uncovered until tender."
+    ],
+    "ecoImpact": {
+      "foodWasteSaved": "Used outer cabbage leaves and small potatoes",
+      "carbonSaved": "Reduced 0.3 kg CO₂ vs buying pre-cut vegetables"
+    },
+    "tip": "Save cabbage core for making sauerkraut and use potato peels for crispy snacks."
+  },
+  {
+    "id": "14",
+    "title": "Orange Yogurt Lassi",
+    "time": "8 mins",
+    "servings": "2 servings",
+    "difficulty": "Easy",
+    "desc": "Refreshing citrus lassi with fresh orange juice and creamy yogurt.",
+    "image": "Orange-Yogurt-Lassi.jpg",
+    "badge": "Refreshing",
+    "tags": ["Orange", "Yogurt", "Honey", "Salt"],
+    "ingredients": ["Orange", "Yogurt", "Honey", "Salt", "Milk", "Ginger", "Black pepper", "Lemon"],
+    "ingredientsWithQuantity": [
+      {"name": "Orange", "quantity": "2 large", "unit": "pieces"},
+      {"name": "Yogurt", "quantity": "1 cup", "unit": "cup"},
+      {"name": "Honey", "quantity": "2 tbsp", "unit": "tablespoons"},
+      {"name": "Salt", "quantity": "1/4 tsp", "unit": "teaspoon"},
+      {"name": "Milk", "quantity": "1/2 cup", "unit": "cup"},
+      {"name": "Ginger", "quantity": "1/4 inch", "unit": "piece"},
+      {"name": "Black pepper", "quantity": "pinch", "unit": "pinch"},
+      {"name": "Lemon", "quantity": "few drops", "unit": "drops"}
+    ],
+    "steps": [
+      "Extract fresh juice from oranges, strain if needed.",
+      "Whisk yogurt until smooth and creamy.",
+      "Add orange juice and cold milk to yogurt.",
+      "Mix in honey, salt and grated ginger.",
+      "Add a pinch of black pepper and lemon drops.",
+      "Blend well, chill and serve with ice."
+    ],
+    "ecoImpact": {
+      "foodWasteSaved": "Used slightly overripe oranges and day-old yogurt",
+      "carbonSaved": "Reduced 0.2 kg CO₂ vs buying packaged fruit drinks"
+    },
+    "tip": "Save orange peels for making natural air freshener and use pulp for marmalade."
+  },
+  {
+    "id": "15",
+    "title": "Chicken Lettuce Wraps",
+    "time": "22 mins",
+    "servings": "4 servings",
+    "difficulty": "Medium",
+    "desc": "Healthy wraps with spiced minced chicken and fresh vegetables in lettuce cups.",
+    "image": "Chicken-Lettuce-Wraps.jpg",
+    "badge": "Healthy",
+    "tags": ["Chicken", "Lettuce", "Cucumber", "Vinegar"],
+    "ingredients": ["Chicken", "Lettuce", "Cucumber", "Vinegar", "Onion", "Garlic", "Ginger", "Red chili powder", "Salt", "Olive Oil"],
+    "ingredientsWithQuantity": [
+      {"name": "Chicken", "quantity": "300g minced", "unit": "grams"},
+      {"name": "Lettuce", "quantity": "8 large leaves", "unit": "leaves"},
+      {"name": "Cucumber", "quantity": "1 medium", "unit": "piece"},
+      {"name": "Vinegar", "quantity": "1 tbsp", "unit": "tablespoon"},
+      {"name": "Onion", "quantity": "1 medium", "unit": "piece"},
+      {"name": "Garlic", "quantity": "4 cloves", "unit": "cloves"},
+      {"name": "Ginger", "quantity": "1 inch", "unit": "piece"},
+      {"name": "Red chili powder", "quantity": "1/2 tsp", "unit": "teaspoon"},
+      {"name": "Salt", "quantity": "1 tsp", "unit": "teaspoon"},
+      {"name": "Olive Oil", "quantity": "2 tbsp", "unit": "tablespoons"}
+    ],
+    "steps": [
+      "Wash and separate lettuce leaves carefully.",
+      "Heat oil, sauté minced ginger-garlic.",
+      "Add diced onions, cook until translucent.",
+      "Add minced chicken, cook until browned.",
+      "Season with spices, salt and vinegar.",
+      "Serve hot chicken in lettuce cups with cucumber strips."
+    ],
+    "ecoImpact": {
+      "foodWasteSaved": "Used chicken trimmings and outer lettuce leaves",
+      "carbonSaved": "Reduced 0.6 kg CO₂ vs restaurant wraps"
+    },
+    "tip": "Save lettuce stems for making green smoothies and use chicken fat for cooking other dishes."
+  },
+  {
+    "id": "16",
+    "title": "Ham Cheese Sandwich",
+    "time": "10 mins",
+    "servings": "2 servings",
+    "difficulty": "Easy",
+    "desc": "Classic grilled sandwich with ham, cheese and vegetables with tangy mayonnaise.",
+    "image": "Ham-Cheese-Sandwich.jpg",
+    "badge": "Quick",
+    "tags": ["Ham", "Cheese", "Bread", "Mayonnaise"],
+    "ingredients": ["Ham", "Cheese", "Bread", "Mayonnaise", "Tomato", "Lettuce", "Cucumber", "Mustard", "Butter", "Black pepper"],
+    "ingredientsWithQuantity": [
+      {"name": "Ham", "quantity": "4 slices", "unit": "slices"},
+      {"name": "Cheese", "quantity": "4 slices", "unit": "slices"},
+      {"name": "Bread", "quantity": "4 slices", "unit": "slices"},
+      {"name": "Mayonnaise", "quantity": "2 tbsp", "unit": "tablespoons"},
+      {"name": "Tomato", "quantity": "1 medium", "unit": "piece"},
+      {"name": "Lettuce", "quantity": "4 leaves", "unit": "leaves"},
+      {"name": "Cucumber", "quantity": "1/2 small", "unit": "piece"},
+      {"name": "Mustard", "quantity": "1 tsp", "unit": "teaspoon"},
+      {"name": "Butter", "quantity": "2 tbsp", "unit": "tablespoons"},
+      {"name": "Black pepper", "quantity": "1/4 tsp", "unit": "teaspoon"}
+    ],
+    "steps": [
+      "Butter bread slices on one side.",
+      "Mix mayonnaise with mustard and black pepper.",
+      "Spread mayo mixture on unbuttered side.",
+      "Layer ham, cheese, tomato slices and lettuce.",
+      "Add cucumber strips and cover with second slice.",
+      "Grill sandwich until golden and cheese melts."
+    ],
+    "ecoImpact": {
+      "foodWasteSaved": "Used day-old bread and vegetable trimmings",
+      "carbonSaved": "Reduced 0.3 kg CO₂ vs buying pre-made sandwiches"
+    },
+    "tip": "Save bread crusts for making croutons and use vegetable peels for composting."
+  },
+  {
+    "id": "17",
+    "title": "Spiced Apple Chutney",
+    "time": "18 mins",
+    "servings": "6 servings",
+    "difficulty": "Easy",
+    "desc": "Sweet and tangy chutney with apples, ginger and aromatic spices.",
+    "image": "Spiced-Apple-Chutney.jpg",
+    "badge": "Condiment",
+    "tags": ["Apple", "Ginger", "Vinegar", "Honey"],
+    "ingredients": ["Apple", "Ginger", "Vinegar", "Honey", "Onion", "Garlic", "Red chili powder", "Salt", "Olive Oil", "Turmeric"],
+    "ingredientsWithQuantity": [
+      {"name": "Apple", "quantity": "4 medium", "unit": "pieces"},
+      {"name": "Ginger", "quantity": "2 inches", "unit": "piece"},
+      {"name": "Vinegar", "quantity": "3 tbsp", "unit": "tablespoons"},
+      {"name": "Honey", "quantity": "2 tbsp", "unit": "tablespoons"},
+      {"name": "Onion", "quantity": "1 small", "unit": "piece"},
+      {"name": "Garlic", "quantity": "3 cloves", "unit": "cloves"},
+      {"name": "Red chili powder", "quantity": "1/2 tsp", "unit": "teaspoon"},
+      {"name": "Salt", "quantity": "1/2 tsp", "unit": "teaspoon"},
+      {"name": "Olive Oil", "quantity": "1 tbsp", "unit": "tablespoon"},
+      {"name": "Turmeric", "quantity": "1/4 tsp", "unit": "teaspoon"}
+    ],
+    "steps": [
+      "Peel and dice apples, mince ginger and garlic.",
+      "Heat oil, sauté diced onions until soft.",
+      "Add ginger-garlic paste, cook for 1 minute.",
+      "Add apple pieces with turmeric and salt.",
+      "Cook until apples are soft but not mushy.",
+      "Add vinegar, honey and chili powder, simmer 5 minutes."
+    ],
+    "ecoImpact": {
+      "foodWasteSaved": "Used bruised apples and ginger ends",
+      "carbonSaved": "Reduced 0.2 kg CO₂ vs buying packaged chutney"
+    },
+    "tip": "Save apple peels and cores for making natural pectin and use for jam-making."
+  },
+  {
+    "id": "18",
+    "title": "Corn Cheese Cutlets",
+    "time": "30 mins",
+    "servings": "4 servings",
+    "difficulty": "Medium",
+    "desc": "Crispy fried cutlets filled with sweet corn and melted cheese.",
+    "image": "Corn-Cheese-Cutlets.jpg",
+    "badge": "Crispy",
+    "tags": ["Corn", "Cheese", "Potato", "Bread"],
+    "ingredients": ["Corn", "Cheese", "Potato", "Bread", "Egg", "Onion", "Ginger", "Black pepper", "Salt", "Olive Oil"],
+    "ingredientsWithQuantity": [
+      {"name": "Corn", "quantity": "1 cup", "unit": "cup"},
+      {"name": "Cheese", "quantity": "1/2 cup", "unit": "cup"},
+      {"name": "Potato", "quantity": "3 medium", "unit": "pieces"},
+      {"name": "Bread", "quantity": "2 slices", "unit": "slices"},
+      {"name": "Egg", "quantity": "1", "unit": "piece"},
+      {"name": "Onion", "quantity": "1 small", "unit": "piece"},
+      {"name": "Ginger", "quantity": "1/2 inch", "unit": "piece"},
+      {"name": "Black pepper", "quantity": "1/2 tsp", "unit": "teaspoon"},
+      {"name": "Salt", "quantity": "1 tsp", "unit": "teaspoon"},
+      {"name": "Olive Oil", "quantity": "for frying", "unit": "as needed"}
+    ],
+    "steps": [
+      "Boil and mash potatoes until smooth.",
+      "Sauté diced onions and ginger until soft.",
+      "Mix mashed potatoes with corn and grated cheese.",
+      "Season with salt and pepper, form into cutlets.",
+      "Make breadcrumbs from bread slices.",
+      "Dip cutlets in beaten egg, coat with breadcrumbs and deep fry."
+    ],
+    "ecoImpact": {
+      "foodWasteSaved": "Used leftover corn and stale bread",
+      "carbonSaved": "Reduced 0.4 kg CO₂ vs buying frozen cutlets"
+    },
+    "tip": "Save potato peels for making crispy chips and reuse frying oil after straining."
+  },
+  {
+    "id": "19",
+    "title": "Fish Tikka Masala",
+    "time": "40 mins",
+    "servings": "4 servings",
+    "difficulty": "Medium",
+    "desc": "Grilled fish in rich tomato-based curry with yogurt and aromatic spices.",
+    "image": "Fish-Tikka-Masala.jpg",
+    "badge": "Restaurant Style",
+    "tags": ["Fish", "Yogurt", "Tomato", "Garam Masala"],
+    "ingredients": ["Fish", "Yogurt", "Tomato", "Ginger", "Garlic", "Onion", "Red chili powder", "Turmeric", "Salt", "Olive Oil"],
+    "ingredientsWithQuantity": [
+      {"name": "Fish", "quantity": "500g", "unit": "grams"},
+      {"name": "Yogurt", "quantity": "1/2 cup", "unit": "cup"},
+      {"name": "Tomato", "quantity": "4 medium", "unit": "pieces"},
+      {"name": "Ginger", "quantity": "2 inches", "unit": "piece"},
+      {"name": "Garlic", "quantity": "6 cloves", "unit": "cloves"},
+      {"name": "Onion", "quantity": "2 large", "unit": "pieces"},
+      {"name": "Red chili powder", "quantity": "1 tsp", "unit": "teaspoon"},
+      {"name": "Turmeric", "quantity": "1/2 tsp", "unit": "teaspoon"},
+      {"name": "Salt", "quantity": "1.5 tsp", "unit": "teaspoon"},
+      {"name": "Olive Oil", "quantity": "3 tbsp", "unit": "tablespoons"}
+    ],
+    "steps": [
+      "Marinate fish cubes with yogurt, half ginger-garlic and spices.",
+      "Grill marinated fish until lightly charred.",
+      "Sauté sliced onions until golden brown.",
+      "Add remaining ginger-garlic paste, cook well.",
+      "Add pureed tomatoes and spices, simmer 15 minutes.",
+      "Add grilled fish, simmer gently for 8-10 minutes."
+    ],
+    "ecoImpact": {
+      "foodWasteSaved": "Used fish scraps for tikka and overripe tomatoes",
+      "carbonSaved": "Reduced 0.8 kg CO₂ vs restaurant takeout"
+    },
+    "tip": "Save fish bones for making nutritious broth and use tomato peels for composting."
+  },
+  {
+    "id": "20",
+    "title": "Bean Sprout Salad",
+    "time": "12 mins",
+    "servings": "3 servings",
+    "difficulty": "Easy",
+    "desc": "Fresh crunchy salad with bean sprouts, vegetables and tangy lemon dressing.",
+    "image": "Bean-Sprout-Salad.jpg",
+    "badge": "Fresh",
+    "tags": ["Beans", "Carrot", "Cucumber", "Lemon"],
+    "ingredients": ["Beans", "Carrot", "Cucumber", "Lemon", "Onion", "Tomato", "Black pepper", "Salt", "Olive Oil", "Coriander"],
+    "ingredientsWithQuantity": [
+      {"name": "Beans", "quantity": "2 cups sprouted", "unit": "cups"},
+      {"name": "Carrot", "quantity": "1 medium", "unit": "piece"},
+      {"name": "Cucumber", "quantity": "1 medium", "unit": "piece"},
+      {"name": "Lemon", "quantity": "1 large", "unit": "piece"},
+      {"name": "Onion", "quantity": "1/2 small", "unit": "piece"},
+      {"name": "Tomato", "quantity": "1 medium", "unit": "piece"},
+      {"name": "Black pepper", "quantity": "1/2 tsp", "unit": "teaspoon"},
+      {"name": "Salt", "quantity": "3/4 tsp", "unit": "teaspoon"},
+      {"name": "Olive Oil", "quantity": "1 tbsp", "unit": "tablespoon"},
+      {"name": "Coriander", "quantity": "3 tbsp", "unit": "tablespoons"}
+    ],
+    "steps": [
+      "Blanch bean sprouts in boiling water for 2 minutes.",
+      "Drain and cool sprouts under cold water.",
+      "Dice cucumber, carrot, onion and tomato finely.",
+      "Mix all vegetables with sprouts in large bowl.",
+      "Whisk lemon juice with olive oil, salt and pepper.",
+      "Toss salad with dressing and fresh coriander."
+    ],
+    "ecoImpact": {
+      "foodWasteSaved": "Used home-sprouted beans and vegetable trimmings",
+      "carbonSaved": "Reduced 0.3 kg CO₂ vs buying packaged salads"
+    },
+    "tip": "Sprout beans at home to reduce packaging waste and save vegetable peels for compost."
   }
   ]
 }
