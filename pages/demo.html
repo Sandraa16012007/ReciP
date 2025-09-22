@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReciP - Demo Video</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(-45deg, #e0ffe0, #e6ffd2, #d6ffe7, #ffe0f0);
+            background-size: 400% 400%;
+            animation: gradientMove 15s ease infinite;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* ===== Navbar ===== */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 70px;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            animation: slideDown 1s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        header .logo {
+            color: #4b9049;
+            font-family: "Ranchers", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            font-size: 38px;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        .nav-links a {
+            margin-left: 60px;
+            text-decoration: none;
+            font-weight: 600;
+            color: #284f28;
+            font-size: 20px;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ff9800;
+        }
+
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 3px;
+            background: #ff9800;
+            left: 0;
+            bottom: -6px;
+            transition: width 0.3s ease-in-out;
+            border-radius: 2px;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Hamburger (for mobile) */
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+            color: #ff9800;
+        }
+
+
+
+        /* Main Content */
+        .demo-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .demo-header {
+            margin-bottom: 3rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 144, 25, 0.2);
+            color: #ff9019;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255, 144, 25, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .demo-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #376736;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+            line-height: 1.2;
+        }
+
+        .highlight {
+            color: #ff9019;
+            position: relative;
+        }
+
+        .demo-description {
+            font-size: 1.2rem;
+            color: #2e7d32;
+            max-width: 900px;
+            margin: 0 auto 3rem;
+            line-height: 1.8;
+        }
+
+        /* Video Container */
+        .video-container {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Video Controls Overlay */
+        .video-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+            padding: 2rem;
+            color: white;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .video-container:hover .video-overlay {
+            transform: translateY(0);
+        }
+
+        .video-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .video-description {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Action Buttons */
+        .demo-actions {
+            margin-top: 3rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 18px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 18px;
+        }
+
+        .btn-primary {
+            background: #ff9800;
+            color: white;
+            box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: #e68a00;
+            transform: scale(1.05);
+            box-shadow: 0 6px 14px rgba(255, 152, 0, 0.5);
+        }
+
+        .btn-secondary {
+            border: 2px solid #2e7d32;
+            color: #2e7d32;
+            background: white;
+        }
+
+        .btn-secondary:hover {
+            background: #e6ffe6;
+            transform: scale(1.05);
+        }
+
+        .floating-bg span {
+            position: absolute;
+            font-size: 38px;
+            opacity: 0.7;
+            animation: float 14s infinite ease-in-out;
+        }
+
+        .floating-bg span:nth-child(1) {
+            top: 30%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-bg span:nth-child(2) {
+            top: 80%;
+            left: 20%;
+            animation-delay: 1s;
+        }
+
+        .floating-bg span:nth-child(3) {
+            top: 60%;
+            left: 80%;
+            animation-delay: 2s;
+        }
+
+        .floating-bg span:nth-child(4) {
+            top: 40%;
+            left: 70%;
+            animation-delay: 3s;
+        }
+
+        .floating-bg span:nth-child(5) {
+            top: 90%;
+            left: 50%;
+            animation-delay: 2s;
+        }
+
+        .floating-bg span:nth-child(6) {
+            top: 10%;
+            left: 60%;
+            animation-delay: 5s;
+        }
+
+        .floating-bg span:nth-child(7) {
+            top: 50%;
+            left: 5%;
+            animation-delay: 3s;
+        }
+
+        .floating-bg span:nth-child(8) {
+            top: 75%;
+            left: 90%;
+            animation-delay: 3s;
+        }
+
+        .floating-bg span:nth-child(9) {
+            top: 20%;
+            left: 40%;
+            animation-delay: 2s;
+        }
+
+        .floating-bg span:nth-child(10) {
+            top: 95%;
+            left: 75%;
+            animation-delay: 5s;
+        }
+
+        .floating-bg span:nth-child(11) {
+            top: 65%;
+            left: 30%;
+            animation-delay: 3s;
+        }
+
+        .floating-bg span:nth-child(12) {
+            top: 35%;
+            left: 85%;
+            animation-delay: 1s;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #444;
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px) rotate(0deg);
+                opacity: 0.6;
+            }
+
+            50% {
+                transform: translateY(-40px) rotate(20deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(0px) rotate(0deg);
+                opacity: 0.6;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .demo-container {
+                padding: 2rem 1rem;
+            }
+
+            .demo-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background Animated Gradient -->
+    <div class="gradient-bg"></div>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">ReciP</div>
+        <nav class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="about.html#contact">Contact</a>
+            <a href="dashboard.html">Profile</a>
+        </nav>
+        <div class="hamburger">☰</div>
+    </header>
+
+    <div class="floating-bg">
+        <span>🥬</span>
+        <span>🍅</span>
+        <span>🥕</span>
+        <span>🍏</span>
+        <span>🍋</span>
+        <span>🍇</span>
+        <span>🍌</span>
+        <span>🌽</span>
+        <span>🍒</span>
+        <span>🍉</span>
+        <span>🥒</span>
+        <span>🍄</span>
+    </div>
+
+    <!-- Main Demo Content -->
+    <div class="demo-container">
+        <div class="demo-header">
+            <span class="badge">🎥 Product Demo • See ReciP in Action</span>
+            <h1 class="demo-title">
+                Watch ReciP <span class="highlight">Transform</span><br>
+                Your Kitchen Experience
+            </h1>
+            <p class="demo-description">
+                See how ReciP's AI-powered technology turns your leftover ingredients into delicious recipes in just
+                seconds.
+                Watch our complete demo to understand how easy it is to reduce food waste and create amazing meals.
+            </p>
+        </div>
+
+        <!-- Video Container -->
+        <div class="video-container">
+            <div class="video-wrapper">
+                <!-- Replace YOUR_GOOGLE_DRIVE_FILE_ID with your actual file ID -->
+                <!-- For Google Drive: https://drive.google.com/file/d/YOUR_FILE_ID/preview -->
+                <iframe src="https://drive.google.com/file/d/1KDMlCJnHYU7Bj89dti3N8hHDlEML55wp/view?usp=sharing&t=1"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-overlay">
+                <div class="video-title">ReciP Demo - AI Recipe Generation</div>
+                <div class="video-description">Watch how AI transforms your ingredients into delicious recipes</div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="demo-actions">
+            <a href="auth.html" class="btn btn-primary">
+                🚀 Try ReciP Now
+            </a>
+            <a href="../index.html" class="btn btn-secondary">
+                ← Back to Home
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2025 ReciP | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.hamburger')?.addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Add mobile nav styles
+        const mobileNavStyles = `
+            @media (max-width: 768px) {
+                .nav-links.active {
+                    display: flex;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    flex-direction: column;
+                    background: rgba(0, 0, 0, 0.9);
+                    padding: 1rem;
+                    gap: 1rem;
+                }
+            }
+        `;
+
+        const styleSheet = document.createElement('style');
+        styleSheet.textContent = mobileNavStyles;
+        document.head.appendChild(styleSheet);
+    </script>
+</body>
+
+</html>
