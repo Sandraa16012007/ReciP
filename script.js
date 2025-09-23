@@ -496,7 +496,7 @@ function renderRecipes(recipes) {
       </div>
       <div class="card-body">
         <h3>${recipe.title}</h3>
-        <div class="meta">⏱ ${recipe.time} • 🍽 ${recipe.servings} servings</div>
+        <div class="meta">⏱ ${recipe.time} • 🍽 ${recipe.servings}</div>
         <p class="desc">${recipe.desc}</p>
         <div class="tags">
           ${recipe.ingredients.map(ing => {
